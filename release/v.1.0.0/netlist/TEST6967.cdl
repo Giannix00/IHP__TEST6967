@@ -1,0 +1,5 @@
+* TEST6967 schematic netlist for LVS.
+* The chip is purely passive: metal lines, pads and ground on Metal1 ... TopMetal1, no devices.
+* The layout therefore extracts no device; the LVS run purges the device-free nets (--purge --purge_nets).
+.SUBCKT TEST6967
+.ENDS TEST6967
