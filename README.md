@@ -38,6 +38,7 @@ Pad positions and sizes: [doc/Datasheet.md](doc/Datasheet.md).
 | `measurements/v.1.0.0/` | measurement results (after fabrication) |
 | `TEST6967-main/` | notes on the top cell |
 | `dependencies/` | none |
+| `.github/workflows/` | workflow-sync template of Open-Silicon-MPW, as created by `gen_structure.py` |
 
 ## License
 
