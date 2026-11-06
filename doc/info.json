@@ -11,7 +11,7 @@
   "pdk_version": "c6562037497437ce6bc689e633e5b45abf9bbccb",
   "process": "SG13CMOS5L",
   "dependencies": {},
-  "tools": ["klayout", "magic"],
+  "tools": ["klayout", "magic", "gdscheck"],
   "top_cell_name": "TEST6967",
   "release": {
     "version": "v.1.0.0",

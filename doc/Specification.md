@@ -8,7 +8,7 @@
 | Devices | none (purely passive: metal lines, pads, ground) |
 | Metal stack used | Metal1 ... TopMetal1, passivation openings on the pads |
 | Supply / bias | none |
-| Test structures | RF_PROBE with on-chip TopMetal1 network to RF_BOND_A and RF_BOND_B; CAL_OPEN, CAL_SHORT, CAL_LINE150 |
+| Test structures | RF_PROBE with on-chip TopMetal1 network to RF_BOND_A and RF_BOND_B; CAL_OPEN, CAL_SHORT; PROBE_TEST; LAND_A, LAND_B |
 | Probe pads | GSG, 100-um pitch, TopMetal1, probed from the left (-x) |
 | Frequency range | D-band, centre 130 GHz |
 | Fill | PDK filler (Activ, GatPoly, Metal1 ... Metal4); no fill on TopMetal1 and in the RF structures |

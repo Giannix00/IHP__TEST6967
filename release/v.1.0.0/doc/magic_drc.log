@@ -1,11 +1,11 @@
 [INFO] DEBUG is enabled!
 [INFO] flag -m is set.
 [INFO] flag -f is set to <*>.
-[INFO] flag -w is set to </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967/magic_TEST6967>.
+[INFO] flag -w is set to </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967_repo/TEST6967-main/layout/klayout/build/magic_TEST6967>.
 [INFO] ihp-sg13cmos5l PDK selected.
-[INFO] Using layout file </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967/TEST6967.gds>.
-[INFO] Running DRC of </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967/TEST6967.gds>.
-[INFO] Results are put into </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967/magic_TEST6967>.
+[INFO] Using layout file </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967_repo/TEST6967-main/layout/klayout/build/TEST6967.gds>.
+[INFO] Running DRC of </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967_repo/TEST6967-main/layout/klayout/build/TEST6967.gds>.
+[INFO] Results are put into </home/woody/iwcs/iwcs101h/ihp_signoff/TEST6967_repo/TEST6967-main/layout/klayout/build/magic_TEST6967>.
 [INFO] Launching Magic DRC...
 [INFO] Magic runs DRC on the .gds file.
 ---

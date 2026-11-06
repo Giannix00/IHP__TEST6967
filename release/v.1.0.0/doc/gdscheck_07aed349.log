@@ -1,0 +1,1686 @@
+===== suite main
+PDK: IHP SG13CMOS5L (0.1)
+Suite: main
+Library: LIB
+Connecting nets ... done (0.4s)
+Memory: planning within 461.8 GB (MemTotal 540.2 GB), 0.1 GB resident, 230.9 GB for the merge cache
+[Ant.a] Checking antenna_ratio: cumulative AntPolyField area / gate area ≥ 200
+[Ant.b] Checking antenna_ratio: cumulative Metal1+Metal2+Metal3+Metal4+TopMetal1 area / gate area ≥ 200 (nets without a protection diode)
+[Ant.c] Checking antenna_ratio: cumulative Cont area / gate area ≥ 20
+[NW.b1] Checking min_space >= 1.80 µm between layer NWell and NWell
+[Ant.e] Checking antenna_ratio: cumulative Metal1+Metal2+Metal3+Metal4+TopMetal1 area / gate area ≥ 20000 (nets with a protection diode)
+[Ant.f] Checking antenna_ratio: cumulative Via1+Via2+Via3+TopVia1 area / gate area ≥ 500 (nets with a protection diode)
+[Ant.d] Checking antenna_ratio: cumulative Via1+Via2+Via3+TopVia1 area / gate area ≥ 20 (nets without a protection diode)
+[Ant.g] Checking min_area >= 0.1600 µm² on layer AntDantenna, on a net with the connected layer
+[Ant.g] Checking min_area >= 0.1600 µm² on layer AntDpantenna, on a net with the connected layer
+[GatPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer GatPoly (5/0)
+[Cont.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Cont (6/0)
+[Activ.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Activ (1/0)
+[GatPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer GatPoly.filler (5/22)
+[PolyRes.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PolyRes (128/0)
+[Activ.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Activ.mask (1/20)
+[Activ.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Activ.filler (1/22)
+[ThickGateOx.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ThickGateOx (44/0)
+[nSD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nSD (7/0)
+[pSD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer pSD (14/0)
+[SalBlock.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SalBlock (28/0)
+[nSD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nSD.block (7/21)
+[NLDB.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NLDB (15/0)
+[NLDD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NLDD (112/0)
+[PLDD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PLDD (113/0)
+[PLDB.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PLDB (45/0)
+[PExt.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PExt (115/0)
+[NExtHV.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NExtHV (116/0)
+[PExtHV.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PExtHV (117/0)
+[NExt.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NExt (114/0)
+[NWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NWell (31/0)
+[nBuLay.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nBuLay (32/0)
+[EXTBlock.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EXTBlock (111/0)
+[PWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PWell (46/0)
+[nBuLay.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nBuLay.block (32/21)
+[PWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PWell.block (46/21)
+[isoNWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer isoNWell (257/0)
+[INLDPWL.offgrid] Checking offgrid (grid = 0.0050 µm) on layer INLDPWL (127/0)
+[IC.offgrid] Checking offgrid (grid = 0.0050 µm) on layer IC (48/0)
+[nBuLayCut.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nBuLayCut (131/0)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1 (8/0)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3 (30/0)
+[Substrate.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Substrate (40/0)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2 (10/0)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3.mask (30/20)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1.mask (8/20)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2.mask (10/20)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3.filler (30/22)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3.slit (30/24)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2.filler (10/22)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1.filler (8/22)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2.slit (10/24)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1.slit (8/24)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5 (67/0)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4 (50/0)
+[Via2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via2 (29/0)
+[Via1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via1 (19/0)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5.mask (67/20)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4.mask (50/20)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5.filler (67/22)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5.slit (67/24)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4.filler (50/22)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4.slit (50/24)
+[Via4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via4 (66/0)
+[MIM.offgrid] Checking offgrid (grid = 0.0050 µm) on layer MIM (36/0)
+[Vmim.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Vmim (129/0)
+[Via3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via3 (49/0)
+[TopVia1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopVia1 (125/0)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1 (126/0)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2 (134/0)
+[TopVia2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopVia2 (133/0)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2.mask (134/20)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2.filler (134/22)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2.slit (134/24)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1.mask (126/20)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1.filler (126/22)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1.slit (126/24)
+[AntMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer AntMetal1 (132/0)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1 (20/0)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv (9/0)
+[BackPassiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackPassiv (23/0)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1.mask (20/20)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv.pillar (9/35)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1.filler (20/22)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv.sbump (9/36)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv.pdl (9/40)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1.slit (20/24)
+[DeepVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer DeepVia (152/0)
+[BiWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BiWind (3/0)
+[AlCuStop.offgrid] Checking offgrid (grid = 0.0050 µm) on layer AlCuStop (159/0)
+[LBE.offgrid] Checking offgrid (grid = 0.0050 µm) on layer LBE (157/0)
+[PEmWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PEmWind (11/0)
+[EmWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EmWind (33/0)
+[BasPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BasPoly (13/0)
+[EmWiHV.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EmWiHV (156/0)
+[PBiWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PBiWind (58/0)
+[PEmPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PEmPoly (53/0)
+[DeepCo.offgrid] Checking offgrid (grid = 0.0050 µm) on layer DeepCo (35/0)
+[EmPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EmPoly (55/0)
+[ColWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ColWind (139/0)
+[ColOpen.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ColOpen (101/0)
+[LDMOS.offgrid] Checking offgrid (grid = 0.0050 µm) on layer LDMOS (57/0)
+[CtrGat.offgrid] Checking offgrid (grid = 0.0050 µm) on layer CtrGat (154/0)
+[FGEtch.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FGEtch (153/0)
+[FLM.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FLM (142/0)
+[FGImp.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FGImp (155/0)
+[FBE.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FBE (54/0)
+[ThinFilmRes.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ThinFilmRes (146/0)
+[MEMPAD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer MEMPAD (124/0)
+[GraphGate.offgrid] Checking offgrid (grid = 0.0050 µm) on layer GraphGate (118/0)
+[HafniumOx.offgrid] Checking offgrid (grid = 0.0050 µm) on layer HafniumOx (143/0)
+[RFMEM.offgrid] Checking offgrid (grid = 0.0050 µm) on layer RFMEM (147/0)
+[Sensor.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Sensor (136/0)
+[SNSRing.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSRing (135/0)
+[MEMVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer MEMVia (145/0)
+[SNSCMOSVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSCMOSVia (138/0)
+[SNSTopVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSTopVia (151/0)
+[SNSArms.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSArms (137/0)
+[SNSBotVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSBotVia (149/0)
+[Exchange0.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange0 (190/0)
+[Exchange2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange2 (192/0)
+[prBoundary.offgrid] Checking offgrid (grid = 0.0050 µm) on layer prBoundary (189/0)
+[Exchange1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange1 (191/0)
+[Exchange3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange3 (193/0)
+[Exchange4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange4 (194/0)
+[GatPoly.angle45] Checking no_angle: non-orthogonal GatPolyNotCircle edges
+[Activ.angle45] Checking no_angle: non-orthogonal ActivNotCircle edges
+[Metal1.angle45] Checking no_angle: non-orthogonal Metal1NotCircle edges
+[Metal2.angle45] Checking no_angle: non-orthogonal Metal2NotCircle edges
+[Metal3.angle45] Checking no_angle: non-orthogonal Metal3NotCircle edges
+[Metal4.angle45] Checking no_angle: non-orthogonal Metal4NotCircle edges
+[TopMetal1.angle45] Checking no_angle: non-orthogonal TopMetal1NotCircle edges
+[Metal5.angle45] Checking no_angle: non-orthogonal Metal5NotCircle edges
+[Cont.angle90] Checking no_angle: non-orthogonal ContNotCircle edges
+[TopMetal2.angle45] Checking no_angle: non-orthogonal TopMetal2NotCircle edges
+[Via2.angle90] Checking no_angle: non-orthogonal Via2NotCircle edges
+[Via4.angle90] Checking no_angle: non-orthogonal Via4NotCircle edges
+[Via3.angle90] Checking no_angle: non-orthogonal Via3NotCircle edges
+[Via1.angle90] Checking no_angle: non-orthogonal Via1NotCircle edges
+[TopVia1.angle90] Checking no_angle: non-orthogonal TopVia1NotCircle edges
+[TopVia2.angle90] Checking no_angle: non-orthogonal TopVia2NotCircle edges
+[Activ.acute] Checking no_corner: Activ corners from 93.0° to 180.0°
+[Vmim.angle90] Checking no_angle: non-orthogonal VmimNotCircle edges
+[Activ.acute] Checking no_corner: Activ.mask corners from 93.0° to 180.0°
+[GatPoly.acute] Checking no_corner: GatPoly.filler corners from 93.0° to 180.0°
+[GatPoly.acute] Checking no_corner: GatPoly corners from 93.0° to 180.0°
+[Activ.acute] Checking no_corner: Activ.filler corners from 93.0° to 180.0°
+[Cont.acute] Checking no_corner: Cont corners from 93.0° to 180.0°
+[nSD.acute] Checking no_corner: nSD corners from 93.0° to 180.0°
+[nSD.acute] Checking no_corner: nSD.block corners from 93.0° to 180.0°
+[PolyRes.acute] Checking no_corner: PolyRes corners from 93.0° to 180.0°
+[SalBlock.acute] Checking no_corner: SalBlock corners from 93.0° to 180.0°
+[pSD.acute] Checking no_corner: pSD corners from 93.0° to 180.0°
+[ThickGateOx.acute] Checking no_corner: ThickGateOx corners from 93.0° to 180.0°
+[NLDB.acute] Checking no_corner: NLDB corners from 93.0° to 180.0°
+[NLDD.acute] Checking no_corner: NLDD corners from 93.0° to 180.0°
+[PLDD.acute] Checking no_corner: PLDD corners from 93.0° to 180.0°
+[PLDB.acute] Checking no_corner: PLDB corners from 93.0° to 180.0°
+[NExt.acute] Checking no_corner: NExt corners from 93.0° to 180.0°
+[NExtHV.acute] Checking no_corner: NExtHV corners from 93.0° to 180.0°
+[PExtHV.acute] Checking no_corner: PExtHV corners from 93.0° to 180.0°
+[EXTBlock.acute] Checking no_corner: EXTBlock corners from 93.0° to 180.0°
+[PExt.acute] Checking no_corner: PExt corners from 93.0° to 180.0°
+[NWell.acute] Checking no_corner: NWell corners from 93.0° to 180.0°
+[PWell.acute] Checking no_corner: PWell.block corners from 93.0° to 180.0°
+[nBuLay.acute] Checking no_corner: nBuLay corners from 93.0° to 180.0°
+[PWell.acute] Checking no_corner: PWell corners from 93.0° to 180.0°
+[nBuLayCut.acute] Checking no_corner: nBuLayCut corners from 93.0° to 180.0°
+[isoNWell.acute] Checking no_corner: isoNWell corners from 93.0° to 180.0°
+[INLDPWL.acute] Checking no_corner: INLDPWL corners from 93.0° to 180.0°
+[nBuLay.acute] Checking no_corner: nBuLay.block corners from 93.0° to 180.0°
+[Substrate.acute] Checking no_corner: Substrate corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1 corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1.mask corners from 93.0° to 180.0°
+[IC.acute] Checking no_corner: IC corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2.mask corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1.filler corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1.slit corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2 corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3.mask corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2.slit corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3 corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2.filler corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4.mask corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3.filler corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4 corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3.slit corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4.slit corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5 corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5.mask corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4.filler corners from 93.0° to 180.0°
+[Via2.acute] Checking no_corner: Via2 corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5.filler corners from 93.0° to 180.0°
+[Via1.acute] Checking no_corner: Via1 corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5.slit corners from 93.0° to 180.0°
+[Via4.acute] Checking no_corner: Via4 corners from 93.0° to 180.0°
+[MIM.acute] Checking no_corner: MIM corners from 93.0° to 180.0°
+[Vmim.acute] Checking no_corner: Vmim corners from 93.0° to 180.0°
+[Via3.acute] Checking no_corner: Via3 corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1.filler corners from 93.0° to 180.0°
+[TopVia1.acute] Checking no_corner: TopVia1 corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1.mask corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1 corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2.mask corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1.slit corners from 93.0° to 180.0°
+[TopVia2.acute] Checking no_corner: TopVia2 corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2 corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2.slit corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv.pillar corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2.filler corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv.pdl corners from 93.0° to 180.0°
+[AntMetal1.acute] Checking no_corner: AntMetal1 corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv.sbump corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1 corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1.filler corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1.slit corners from 93.0° to 180.0°
+[BackPassiv.acute] Checking no_corner: BackPassiv corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1.mask corners from 93.0° to 180.0°
+[DeepVia.acute] Checking no_corner: DeepVia corners from 93.0° to 180.0°
+[LBE.acute] Checking no_corner: LBE corners from 93.0° to 180.0°
+[BiWind.acute] Checking no_corner: BiWind corners from 93.0° to 180.0°
+[AlCuStop.acute] Checking no_corner: AlCuStop corners from 93.0° to 180.0°
+[PEmWind.acute] Checking no_corner: PEmWind corners from 93.0° to 180.0°
+[BasPoly.acute] Checking no_corner: BasPoly corners from 93.0° to 180.0°
+[EmWind.acute] Checking no_corner: EmWind corners from 93.0° to 180.0°
+[EmWiHV.acute] Checking no_corner: EmWiHV corners from 93.0° to 180.0°
+[PEmPoly.acute] Checking no_corner: PEmPoly corners from 93.0° to 180.0°
+[PBiWind.acute] Checking no_corner: PBiWind corners from 93.0° to 180.0°
+[EmPoly.acute] Checking no_corner: EmPoly corners from 93.0° to 180.0°
+[DeepCo.acute] Checking no_corner: DeepCo corners from 93.0° to 180.0°
+[ColWind.acute] Checking no_corner: ColWind corners from 93.0° to 180.0°
+[CtrGat.acute] Checking no_corner: CtrGat corners from 93.0° to 180.0°
+[LDMOS.acute] Checking no_corner: LDMOS corners from 93.0° to 180.0°
+[ColOpen.acute] Checking no_corner: ColOpen corners from 93.0° to 180.0°
+[FGEtch.acute] Checking no_corner: FGEtch corners from 93.0° to 180.0°
+[FGImp.acute] Checking no_corner: FGImp corners from 93.0° to 180.0°
+[FLM.acute] Checking no_corner: FLM corners from 93.0° to 180.0°
+[FBE.acute] Checking no_corner: FBE corners from 93.0° to 180.0°
+[ThinFilmRes.acute] Checking no_corner: ThinFilmRes corners from 93.0° to 180.0°
+[GraphGate.acute] Checking no_corner: GraphGate corners from 93.0° to 180.0°
+[MEMPAD.acute] Checking no_corner: MEMPAD corners from 93.0° to 180.0°
+[HafniumOx.acute] Checking no_corner: HafniumOx corners from 93.0° to 180.0°
+[RFMEM.acute] Checking no_corner: RFMEM corners from 93.0° to 180.0°
+[SNSRing.acute] Checking no_corner: SNSRing corners from 93.0° to 180.0°
+[Sensor.acute] Checking no_corner: Sensor corners from 93.0° to 180.0°
+[MEMVia.acute] Checking no_corner: MEMVia corners from 93.0° to 180.0°
+[SNSCMOSVia.acute] Checking no_corner: SNSCMOSVia corners from 93.0° to 180.0°
+[SNSBotVia.acute] Checking no_corner: SNSBotVia corners from 93.0° to 180.0°
+[SNSTopVia.acute] Checking no_corner: SNSTopVia corners from 93.0° to 180.0°
+[SNSArms.acute] Checking no_corner: SNSArms corners from 93.0° to 180.0°
+[Exchange0.acute] Checking no_corner: Exchange0 corners from 93.0° to 180.0°
+[Exchange1.acute] Checking no_corner: Exchange1 corners from 93.0° to 180.0°
+[Exchange2.acute] Checking no_corner: Exchange2 corners from 93.0° to 180.0°
+[prBoundary.acute] Checking no_corner: prBoundary corners from 93.0° to 180.0°
+[Exchange4.acute] Checking no_corner: Exchange4 corners from 93.0° to 180.0°
+[Exchange3.acute] Checking no_corner: Exchange3 corners from 93.0° to 180.0°
+[forbidden] Checking forbidden region on layer BiWind (3/0)
+[forbidden] Checking forbidden region on layer PEmWind (11/0)
+[forbidden] Checking forbidden region on layer BasPoly (13/0)
+[forbidden] Checking forbidden region on layer DeepCo (35/0)
+[forbidden] Checking forbidden region on layer PEmPoly (53/0)
+[forbidden] Checking forbidden region on layer EmPoly (55/0)
+[forbidden] Checking forbidden region on layer LDMOS (57/0)
+[forbidden] Checking forbidden region on layer PBiWind (58/0)
+[forbidden] Checking forbidden region on layer NoDRC (62/0)
+[forbidden] Checking forbidden region on layer Flash (71/0)
+[forbidden] Checking forbidden region on layer ColWind (139/0)
+[forbidden] Checking forbidden region on layer Metal5 (67/0)
+[forbidden] Checking forbidden region on layer Metal5.filler (67/22)
+[forbidden] Checking forbidden region on layer Via4 (66/0)
+[forbidden] Checking forbidden region on layer TopMetal2 (134/0)
+[forbidden] Checking forbidden region on layer TopMetal2.filler (134/22)
+[forbidden] Checking forbidden region on layer TopVia2 (133/0)
+[forbidden] Checking forbidden region on layer TRANS (26/0)
+[forbidden] Checking forbidden region on layer nBuLay (32/0)
+[forbidden] Checking forbidden region on layer MIM (36/0)
+[forbidden] Checking forbidden region on layer Vmim (129/0)
+[Pin.a] Checking forbidden: Activ.pin not covered by Activ
+[Pin.b] Checking forbidden: GatPoly.pin not covered by GatPoly
+[Pin.e] Checking forbidden: Metal1.pin not covered by Metal1
+[Pin.f] Checking forbidden: Metal2.pin not covered by Metal2
+[Pin.f] Checking forbidden: Metal3.pin not covered by Metal3
+[Pin.f] Checking forbidden: Metal4.pin not covered by Metal4
+[Pin.f] Checking forbidden: Metal5.pin not covered by Metal5
+[Pin.g] Checking forbidden: TopMetal1.pin not covered by TopMetal1
+[Pin.h] Checking forbidden: TopMetal2.pin not covered by TopMetal2
+[LBE.b2] Checking min_area >= 30000.0000 µm² on layer LBE
+[LBE.b1] Checking max_area <= 250000.0000 µm² on layer LBE
+[LBE.b] Checking max_length <= 1500.00 µm on layer LBE
+[LBE.a] Checking min_width >= 100.00 µm on layer LBE (157/0)
+[LBE.c] Checking min_space >= 100.00 µm between layer LBE and LBE
+[LBE.c] Checking min_notch >= 100.00 µm on layer LBE (157/0)
+[LBE.e] Checking min_space >= 50.00 µm between layer LBE and dfpad
+[LBE.d] Checking min_space >= 150.00 µm between layer LBE and EdgeSeal
+[LBE.e] Checking min_space >= 50.00 µm between layer LBE and Passiv
+[LBE.e] Checking forbidden: LBE over dfpad not allowed
+[LBE.e] Checking forbidden: LBE over Passiv not allowed
+[LBE.h] Checking no LBE ring on layer LBE (157/0)
+[LBE.i] Checking max_density <= 20.00% on layer(s) [LBE]
+[Pad.a1] Checking max_width <= 150.00 µm on layer PassivDfpad (30315/0)
+[LBE.f] Checking min_space >= 30.00 µm between layer LBE and Activ
+[LBE.i] Density: 0.00%
+[Pad.d] Checking min_space >= 7.50 µm between layer PassivDfpad and SealActiv
+[Pad.i] Checking forbidden region on layer DfpadNoTopMetal1 (30481/0)
+[Padb.b] Checking min_space >= 70.00 µm between layer SBumpPad and SBumpPad
+[Padb.c] Checking min_enclosure >= 10.00 µm of SBumpPad within TopMetal1
+[Padb.a] Checking exact_dim == 60.00 µm on layer SBumpPad
+[Padb.a] Checking exact_length == 60.00 µm on layer SBumpPad
+[Padb.d] Checking min_space >= 50.00 µm between layer SBumpPad and EdgeSeal
+[Padb.f] Checking forbidden region on layer SBumpPadBadShape (30020/0)
+[Padc.a] Checking forbidden region on layer CuPillarPadOffSize (30030/0)
+[Padc.c] Checking min_enclosure >= 7.50 µm of CuPillarPad within TopMetal1
+[Padc.b] Checking min_space >= 50.00 µm between layer CuPillarPad45 and CuPillarPadNot45
+[Padc.b] Checking min_space >= 50.00 µm between layer CuPillarPad45 and CuPillarPad45
+[Padc.b] Checking min_space >= 40.00 µm between layer CuPillarPad and CuPillarPad
+[Padc.d] Checking forbidden region on layer PadcDBad (30035/0)
+[Padc.f] Checking forbidden region on layer CuPillarPadBadShape (30021/0)
+[Act.c] Checking min_enclosure >= 0.23 µm of GatPoly within Activ
+[Act.b] Checking min_space >= 0.21 µm between layer Activ and Activ
+[Act.a] Checking min_width >= 0.15 µm on layer Activ (1/0)
+[Act.b] Checking min_notch >= 0.21 µm on layer Activ (1/0)
+[Act.e] Checking min_area >= 0.1500 µm² on layer ActivHoleEmpty
+[Act.d] Checking min_area >= 0.1220 µm² on layer Activ
+[AFil.a] Checking max_width <= 5.00 µm on layer Activ.filler (1/22)
+[AFil.a1] Checking min_width >= 1.00 µm on layer Activ.filler (1/22)
+[AFil.b] Checking min_space >= 0.42 µm between layer Activ.filler and Activ.filler
+[AFil.c] Checking min_space >= 1.10 µm between layer Activ.filler and Cont
+[AFil.c] Checking min_space >= 1.10 µm between layer Activ.filler and GatPoly
+[AFil.c1] Checking min_space >= 0.42 µm between layer Activ.filler and Activ
+[AFil.d] Checking min_enclosure >= 1.00 µm of ActivFillerInNWell within NWell
+[AFil.d] Checking min_space >= 1.00 µm between layer Activ.filler and nBuLayDerived
+[AFil.d] Checking min_space >= 1.00 µm between layer Activ.filler and NWell
+[AFil.d] Checking min_enclosure >= 1.00 µm of ActivFillerInNBuLay within nBuLayDerived
+[AFil.g1] Checking max_density <= 55.00% on layer(s) [Activ, Activ.filler, Activ.mask]
+[AFil.g] Checking min_density >= 35.00% on layer(s) [Activ, Activ.filler, Activ.mask]
+[AFil.e] Checking min_enclosure >= 1.00 µm of ActivFillerInTRANS within TRANS
+[AFil.e] Checking min_space >= 1.00 µm between layer Activ.filler and TRANS
+[AFil.g1] Density: 40.77%
+[AFil.g] Density: 40.77%
+[AFil.i] Checking min_space >= 1.50 µm between layer Activ.filler and PWell.block
+[AFil.g2] Checking min_density >= 25.00% on layer(s) [Activ, Activ.filler, Activ.mask] (window: 800x800 µm²)
+[AFil.g3] Checking max_density <= 65.00% on layer(s) [Activ, Activ.filler, Activ.mask] (window: 800x800 µm²)
+[AFil.i] Checking min_enclosure >= 1.50 µm of ActivFillerWithinPWellBlock within PWell.block
+[AFil.j] Checking min_enclosure >= 0.25 µm of ActivFillerInPWellBlock within nSDBlockAndSalBlock
+[TGO.b] Checking min_space >= 0.27 µm between layer ThickGateOx and ActivOutsideTGO
+[TGO.c] Checking min_enclosure >= 0.34 µm of GatPoly within ThickGateOx
+[TGO.a] Checking min_enclosure >= 0.27 µm of Activ within ThickGateOx
+[TGO.e] Checking min_notch >= 0.86 µm on layer ThickGateOx (44/0)
+[TGO.e] Checking min_space >= 0.86 µm between layer ThickGateOx and ThickGateOx
+[TGO.f] Checking min_width >= 0.86 µm on layer ThickGateOx (44/0)
+[TGO.d] Checking min_space >= 0.34 µm between layer ThickGateOx and GatPolyOverActivOutsideTGO
+[Gat.a1] Checking min_gate_length >= 0.13 µm of GatPoly between its walls shared with the boundary of GatPolyOverNsdActivNoTGONoVaricap
+[Gat.a2] Checking min_gate_length >= 0.13 µm of GatPoly between its walls shared with the boundary of GatPolyOverPsdActivNoTGONoVaricap
+[Gat.a3] Checking min_gate_length >= 0.45 µm of GatPoly between its walls shared with the boundary of GatPolyOverNsdActivTGONoVaricap
+[Gat.a] Checking min_width >= 0.13 µm on layer GatPoly (5/0)
+[Gat.a4] Checking min_gate_length >= 0.40 µm of GatPoly between its walls shared with the boundary of GatPolyOverPsdActivTGONoVaricap
+[Gat.b] Checking min_space >= 0.18 µm between layer GatPoly and GatPoly
+[Gat.b1] Checking min_space >= 0.25 µm between layer GatPolyHV and GatPolyHV
+[Gat.b] Checking min_notch >= 0.18 µm on layer GatPoly (5/0)
+[Gat.c] Checking min_enclosure >= 0.18 µm of Activ within GatPolyNoSRAM
+[Gat.c] Checking forbidden region on layer GatPolyInsideActiv (30284/0)
+[Gat.d] Checking min_space >= 0.07 µm between layer GatPoly and Activ
+[Gat.e] Checking min_area >= 0.0900 µm² on layer GatPoly
+[Gat.f] Checking forbidden region on layer GatPolyOverActivNotRect (30283/0)
+[Gat.g] Checking min_width >= 0.16 µm on layer GatPoly (5/0)
+[GFil.a] Checking max_width <= 5.00 µm on layer GatPoly.filler (5/22)
+[GFil.c] Checking min_space >= 0.80 µm between layer GatPoly.filler and GatPoly.filler
+[GFil.b] Checking min_width >= 0.70 µm on layer GatPoly.filler (5/22)
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and GatPoly
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and Activ
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and Cont
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and pSD
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and SalBlock
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and nSD.block
+[GFil.d] Checking forbidden region on layer GatPolyFillerOverGFilD (30287/0)
+[GFil.f] Checking min_space >= 1.10 µm between layer GatPoly.filler and TRANS
+[GFil.g] Checking min_density >= 15.00% on layer(s) [GatPoly, GatPoly.filler]
+[GFil.e] Checking min_space >= 1.10 µm between layer GatPoly.filler and nBuLayDerived
+[GFil.e] Checking min_space >= 1.10 µm between layer GatPoly.filler and NWell
+[GFil.g] Density: 23.74%
+[GFil.i] Checking max_area <= 160000.0000 µm² on layer GatPoly.nofill
+[GFil.j] Checking min_enclosure >= 0.18 µm of Activ.filler within GatPoly.filler
+[GFil.j] Checking forbidden region on layer GatPolyFillerInsideActivFiller (30285/0)
+[EXTB.b] Checking min_notch >= 0.31 µm on layer EXTBlock (111/0)
+[EXTB.a] Checking min_width >= 0.31 µm on layer EXTBlock (111/0)
+[EXTB.b] Checking min_space >= 0.31 µm between layer EXTBlock and EXTBlock
+[EXTB.c] Checking min_space >= 0.31 µm between layer EXTBlock and pSD
+[Cnt.b] Checking min_space >= 0.18 µm between layer ContSquare and ContSquare
+[Cnt.b1] Checking min_space >= 0.20 µm in 1 of 2 axes, arrays over 4×4, on layer ContSquare
+[Cnt.a] Checking exact_width == 0.16 µm on layer ContSquare (30076/0)
+[Cnt.c] Checking min_enclosure >= 0.07 µm of ContOnActivAna within Activ
+[Cnt.c.dig] Checking min_enclosure >= 0.05 µm of ContOnActivDig within Activ
+[Cnt.d] Checking min_enclosure >= 0.07 µm of ContOnGatPoly within GatPoly
+[Cnt.e] Checking min_space >= 0.14 µm between layer ContOnGatPolyNoVaricap and Activ
+[Cnt.f] Checking min_space >= 0.11 µm between layer ContOnActivNoVaricap and GatPoly
+[Cnt.g] Checking forbidden: ContSquare not covered by Activ or GatPoly
+[Cnt.g2] Checking min_enclosure >= 0.09 µm of ContOnPsdActiv within pSD
+[Cnt.g1] Checking min_space >= 0.09 µm between layer pSD and ContOnNsdActiv
+[Cnt.h] Checking forbidden: ContSquare not covered by Metal1
+[Cnt.j] Checking forbidden: ContOnGatPolyNoVaricap over Activ not allowed
+[CntB.b] Checking min_space >= 0.28 µm between layer ContBar and ContBar
+[CntB.a] Checking min_dim >= 0.16 µm on layer ContBarNoSchottky
+[CntB.a] Checking max_dim <= 0.16 µm on layer ContBarNoSchottky
+[CntB.a1] Checking min_length >= 0.34 µm on layer ContBar
+[CntB.c] Checking min_enclosure >= 0.07 µm of ContBarOnActiv within Activ
+[CntB.b1] Checking min_space >= 0.36 µm between layer ContBar and ContBar
+[CntB.d] Checking min_enclosure >= 0.07 µm of ContBarOnGatPoly within GatPoly
+[CntB.b2] Checking min_space >= 0.22 µm between layer ContBar and Cont
+[CntB.f] Checking min_space >= 0.11 µm between layer ContBarOnActiv and GatPoly
+[CntB.e] Checking min_space >= 0.14 µm between layer ContBarOnGatPoly and Activ
+[CntB.g] Checking forbidden: ContBar not covered by Activ or GatPoly
+[CntB.g2] Checking min_enclosure >= 0.09 µm of ContBarOnPsdActiv within pSD
+[CntB.g1] Checking min_space >= 0.09 µm between layer pSD and ContBarOnNsdActiv
+[CntB.h] Checking forbidden: ContBar not covered by Metal1
+[CntB.h1] Checking min_enclosure >= 0.05 µm of ContBar within Metal1
+[CntB.j] Checking forbidden: ContBarOnGatPoly over Activ not allowed
+[Sal.b] Checking min_notch >= 0.42 µm on layer SalBlock (28/0)
+[Sal.a] Checking min_width >= 0.42 µm on layer SalBlock (28/0)
+[Sal.c] Checking min_enclosure >= 0.20 µm of ActivOrGatPoly within SalBlock
+[Sal.b] Checking min_space >= 0.42 µm between layer SalBlock and SalBlock
+[Sal.d] Checking min_space >= 0.20 µm between layer SalBlock and ActivOrGatPoly
+[Sal.d] Checking min_space >= 0.20 µm between layer SalBlock and ActivOrGatPoly
+[nSDB.a] Checking min_width >= 0.31 µm on layer nSD.block (7/21)
+[Sal.e] Checking min_space >= 0.20 µm between layer SalBlock and Cont
+[nSDB.b] Checking min_notch >= 0.31 µm on layer nSD.block (7/21)
+[nSDB.c] Checking min_space >= 0.31 µm between layer nSD.block and pSD
+[nSDB.c] Checking min_space >= 0.31 µm between layer nSD.block and pSD
+[nSDB.b] Checking min_space >= 0.31 µm between layer nSD.block and nSD.block
+[nSDB.e] Checking forbidden: nSD.block over Cont not allowed
+[pSD.a] Checking min_width >= 0.31 µm on layer pSD (14/0)
+[pSD.b] Checking min_space >= 0.31 µm between layer pSD and pSD
+[pSD.b] Checking min_notch >= 0.31 µm on layer pSD (14/0)
+[pSD.c] Checking min_enclosure >= 0.18 µm of ActivInNWellNoVaricap within pSD
+[pSD.c1] Checking min_enclosure >= 0.03 µm of PsdC1Target within pSD
+[pSD.d] Checking min_space >= 0.18 µm between layer pSD and NActivInPWell
+[pSD.d1] Checking min_space >= 0.03 µm between layer pSD and NActivInNWell
+[pSD.e] Checking forbidden region on layer TieTooNarrowNoVaricap (30224/0)
+[pSD.f] Checking forbidden region on layer PsdFBad (30167/0)
+[pSD.g] Checking min_area >= 0.0900 µm² on layer NTapAbutted
+[pSD.g] Checking min_area >= 0.0900 µm² on layer PTapAbutted
+[pSD.i] Checking forbidden region on layer PsdIShort (30403/0)
+[pSD.i1] Checking forbidden region on layer PsdI1Short (30413/0)
+[pSD.j] Checking min_space >= 0.30 µm between layer pSDNoSRAM and GatPolyOverNsdActivNoTGONoSVaricap
+[pSD.l] Checking min_area >= 0.2500 µm² on layer PsdHoleEmpty
+[pSD.k] Checking min_area >= 0.2500 µm² on layer pSD
+[pSD.j1] Checking min_space >= 0.40 µm between layer pSDNoSRAM and GatPolyOverNsdActivTGONoSVaricap
+[pSD.n] Checking min_enclosure >= 0.18 µm of RppdAll within pSD
+[Rsil.a] Checking min_width >= 0.50 µm on layer RsilAll (30176/0)
+[Rsil.b] Checking min_space >= 0.12 µm between layer RES and Cont
+[pSD.m] Checking min_space >= 0.18 µm between layer GPRsilExtended and pSD
+[Rsil.c] Checking forbidden region on layer RsilResInset (30183/0)
+[Rsil.e] Checking min_enclosure >= 0.18 µm of GPRsilExtended within EXTBlock
+[Rppd.a] Checking min_width >= 0.50 µm on layer RppdAll (30186/0)
+[Rsil.d] Checking min_space >= 0.18 µm between layer GPRsilExtended and pSD
+[Rsil.f] Checking min_width >= 0.50 µm on layer RES (24/0)
+[Rppd.c] Checking min_space >= 0.20 µm between layer RppdCont and SalBlockRppd
+[Rppd.b] Checking min_enclosure >= 0.18 µm of GPRppdExtended within pSD
+[Rppd.c] Checking forbidden region on layer RppdContTooFar (30191/0)
+[Rppd.e] Checking min_width >= 0.50 µm on layer SalBlockRppd (30188/0)
+[Rppd.d] Checking min_enclosure >= 0.18 µm of GPRppdExtended within EXTBlock
+[Rhi.a] Checking min_width >= 0.50 µm on layer RhighA (30173/0)
+[Rhi.b] Checking forbidden region on layer NsdMismatchAtRhigh (30200/0)
+[Rhi.b] Checking forbidden region on layer PsdMismatchAtRhigh (30202/0)
+[Rhi.c] Checking min_enclosure >= 0.18 µm of GPRhighExtended within pSDnSD
+[Rhi.d] Checking min_space >= 0.20 µm between layer RhighCont and SalBlockRhigh
+[Rhi.d] Checking forbidden region on layer RhighContTooFar (30195/0)
+[Rhi.f] Checking min_width >= 0.50 µm on layer SalBlockRhigh (30174/0)
+[Rhi.e] Checking min_enclosure >= 0.18 µm of GPRhighExtended within EXTBlock
+[NW.a] Checking min_width >= 0.62 µm on layer NWell (31/0)
+[NW.b] Checking min_space >= 0.62 µm between layer NWell and NWell
+[NW.c] Checking min_enclosure >= 0.31 µm of PsdActivInNWellNoTGONoSRAMVaricap within NWell
+[NW.b] Checking min_notch >= 0.62 µm on layer NWell (31/0)
+[NW.c1.dig] Checking min_enclosure >= 0.31 µm of PsdActivInNWellTGODigNoVaricap within NWell
+[NW.c1] Checking min_enclosure >= 0.62 µm of PsdActivInNWellTGOAnaNoDevice within NWell
+[NW.d] Checking min_space >= 0.31 µm between layer NWellNoSRAM and NActExtNoTGO
+[NW.e] Checking min_enclosure >= 0.24 µm of NWellTieNoTGO within NWell
+[NW.d1] Checking min_space >= 0.62 µm between layer NWellNoSRAM and NActExtTGOAna
+[NW.d1.dig] Checking min_space >= 0.31 µm between layer NWellNoSRAM and NActExtTGODig
+[NW.e1.dig] Checking min_enclosure >= 0.24 µm of NWellTieTGODig within NWell
+[NW.f] Checking min_space >= 0.24 µm between layer NWellNoVaricap and SubstrateTieNoTGO
+[NW.f1] Checking min_space >= 0.62 µm between layer NWellNoVaricap and SubstrateTieTGOAna
+[NW.e1] Checking min_enclosure >= 0.62 µm of NWellTieTGOAnaNoDevice within NWell
+[PWB.a] Checking min_width >= 0.62 µm on layer PWell.block (46/21)
+[NW.f1.dig] Checking min_space >= 0.24 µm between layer NWellNoVaricap and SubstrateTieTGODig
+[PWB.b] Checking min_space >= 0.62 µm between layer PWell.block and PWell.block
+[PWB.b] Checking min_notch >= 0.62 µm on layer PWell.block (46/21)
+[PWB.c] Checking min_space >= 0.62 µm between layer PWell.block and NWell
+[PWB.e1] Checking min_space >= 0.62 µm between layer PWell.block and NsdActivInPWellTGO
+[PWB.e] Checking min_space >= 0.31 µm between layer PWell.block and NsdActivInPWellNoTGO
+[PWB.c] Checking min_space >= 0.62 µm between layer PWell.block and NWell
+[PWB.f] Checking min_space >= 0.24 µm between layer PWell.block and PsdActivInPWellNoTGO
+[M1.b] Checking min_space >= 0.18 µm between layer Metal1NoSealring and Metal1NoSealring
+[PWB.f1] Checking min_space >= 0.62 µm between layer PWellBlockNoSchottky and PsdActivInPWellTGO
+[M1.a] Checking min_width >= 0.16 µm on layer Metal1NoSealring (30043/0)
+[M1.d] Checking min_area >= 0.0900 µm² on layer Metal1NoSealring
+[M1.c] Checking min_enclosure >= 0.00 µm of ContNoSealring within Metal1
+[M1.c1] Checking min_enclosure >= 0.05 µm of ContNoSealring within Metal1
+[M1.b] Checking min_notch >= 0.18 µm on layer Metal1NoSealring (30043/0)
+[M1.e] Checking min_space >= 0.22 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1.f] Checking min_space >= 0.60 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1.i] Checking min_space >= 0.22 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1.g] Checking min_width >= 0.20 µm on layer Metal1NoSealring (30043/0)
+[M1.j] Checking min_density >= 35.00% on layer(s) [Metal1Density]
+[M1.k] Checking max_density <= 60.00% on layer(s) [Metal1Density]
+[M1Fil.a2] Checking max_length <= 5.00 µm on layer Metal1.filler
+[M1Fil.a1] Checking min_width >= 1.00 µm on layer Metal1.filler (8/22)
+[M1.j] Density: 44.62%
+[M1.k] Density: 44.62%
+[M1Fil.b] Checking min_space >= 0.42 µm between layer Metal1.filler and Metal1.filler
+[M1Fil.c] Checking min_space >= 0.42 µm between layer Metal1.filler and Metal1
+[M1Fil.d] Checking min_enclosure >= 1.00 µm of Metal1FillerInTRANS within TRANS
+[M1Fil.d] Checking min_space >= 1.00 µm between layer Metal1.filler and TRANS
+[M1Fil.h] Checking min_density >= 25.00% on layer(s) [Metal1Density] (window: 800x800 µm²)
+[M1Fil.k] Checking max_density <= 75.00% on layer(s) [Metal1Density] (window: 800x800 µm²)
+[M2.b] Checking min_space >= 0.21 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.a] Checking min_width >= 0.20 µm on layer Metal2NoSealring (30044/0)
+[M2.b] Checking min_notch >= 0.21 µm on layer Metal2NoSealring (30044/0)
+[M2.d] Checking min_area >= 0.1440 µm² on layer Metal2NoSealring
+[M2.c1] Checking min_enclosure >= 0.05 µm of Via1NoSealring within Metal2
+[M2.c] Checking min_enclosure >= 0.01 µm of Via1NoSealring within Metal2
+[M2.e] Checking min_space >= 0.24 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.f] Checking min_space >= 0.60 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.i] Checking min_space >= 0.24 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.g] Checking min_width >= 0.24 µm on layer Metal2NoSealring (30044/0)
+[M2.k] Checking max_density <= 60.00% on layer(s) [Metal2Density]
+[M2.j] Checking min_density >= 35.00% on layer(s) [Metal2Density]
+[M2Fil.a1] Checking min_width >= 1.00 µm on layer Metal2.filler (10/22)
+[M2Fil.a2] Checking max_length <= 5.00 µm on layer Metal2.filler
+[M2.j] Density: 42.80%
+[M2.k] Density: 42.80%
+[M2Fil.b] Checking min_space >= 0.42 µm between layer Metal2.filler and Metal2.filler
+[M2Fil.c] Checking min_space >= 0.42 µm between layer Metal2.filler and Metal2
+[M2Fil.d] Checking min_space >= 1.00 µm between layer Metal2.filler and TRANS
+[M2Fil.d] Checking min_enclosure >= 1.00 µm of Metal2FillerInTRANS within TRANS
+[M2Fil.h] Checking min_density >= 25.00% on layer(s) [Metal2Density] (window: 800x800 µm²)
+[M2Fil.k] Checking max_density <= 75.00% on layer(s) [Metal2Density] (window: 800x800 µm²)
+[M3.a] Checking min_width >= 0.20 µm on layer Metal3NoSealring (30045/0)
+[M3.b] Checking min_space >= 0.21 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.d] Checking min_area >= 0.1440 µm² on layer Metal3NoSealring
+[M3.b] Checking min_notch >= 0.21 µm on layer Metal3NoSealring (30045/0)
+[M3.c1] Checking min_enclosure >= 0.05 µm of Via2NoSealring within Metal3
+[M3.c] Checking min_enclosure >= 0.01 µm of Via2NoSealring within Metal3
+[M3.e] Checking min_space >= 0.24 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.i] Checking min_space >= 0.24 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.f] Checking min_space >= 0.60 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.g] Checking min_width >= 0.24 µm on layer Metal3NoSealring (30045/0)
+[M3Fil.a1] Checking min_width >= 1.00 µm on layer Metal3.filler (30/22)
+[M3.k] Checking max_density <= 60.00% on layer(s) [Metal3Density]
+[M3.j] Checking min_density >= 35.00% on layer(s) [Metal3Density]
+[M3Fil.a2] Checking max_length <= 5.00 µm on layer Metal3.filler
+[M3.j] Density: 42.20%
+[M3.k] Density: 42.20%
+[M3Fil.d] Checking min_space >= 1.00 µm between layer Metal3.filler and TRANS
+[M3Fil.b] Checking min_space >= 0.42 µm between layer Metal3.filler and Metal3.filler
+[M3Fil.c] Checking min_space >= 0.42 µm between layer Metal3.filler and Metal3
+[M3Fil.d] Checking min_enclosure >= 1.00 µm of Metal3FillerInTRANS within TRANS
+[M3Fil.h] Checking min_density >= 25.00% on layer(s) [Metal3Density] (window: 800x800 µm²)
+[M3Fil.k] Checking max_density <= 75.00% on layer(s) [Metal3Density] (window: 800x800 µm²)
+[M4.a] Checking min_width >= 0.20 µm on layer Metal4NoSealring (30046/0)
+[M4.b] Checking min_space >= 0.21 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.d] Checking min_area >= 0.1440 µm² on layer Metal4NoSealring
+[M4.c] Checking min_enclosure >= 0.01 µm of Via3NoSealring within Metal4
+[M4.c1] Checking min_enclosure >= 0.05 µm of Via3NoSealring within Metal4
+[M4.b] Checking min_notch >= 0.21 µm on layer Metal4NoSealring (30046/0)
+[M4.f] Checking min_space >= 0.60 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.e] Checking min_space >= 0.24 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.i] Checking min_space >= 0.24 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.g] Checking min_width >= 0.24 µm on layer Metal4NoSealring (30046/0)
+[M4.k] Checking max_density <= 60.00% on layer(s) [Metal4Density]
+[M4.j] Checking min_density >= 35.00% on layer(s) [Metal4Density]
+[M4Fil.a1] Checking min_width >= 1.00 µm on layer Metal4.filler (50/22)
+[M4Fil.a2] Checking max_length <= 5.00 µm on layer Metal4.filler
+[M4.k] Density: 42.80%
+[M4.j] Density: 42.80%
+[M4Fil.b] Checking min_space >= 0.42 µm between layer Metal4.filler and Metal4.filler
+[M4Fil.d] Checking min_enclosure >= 1.00 µm of Metal4FillerInTRANS within TRANS
+[M4Fil.c] Checking min_space >= 0.42 µm between layer Metal4.filler and Metal4
+[M4Fil.d] Checking min_space >= 1.00 µm between layer Metal4.filler and TRANS
+[M4Fil.k] Checking max_density <= 75.00% on layer(s) [Metal4Density] (window: 800x800 µm²)
+[M4Fil.h] Checking min_density >= 25.00% on layer(s) [Metal4Density] (window: 800x800 µm²)
+[V1.a] Checking exact_width == 0.19 µm on layer Via1NoSealring (30038/0)
+[V1.b] Checking min_space >= 0.22 µm between layer Via1NoSealring and Via1NoSealring
+[V1.b1] Checking min_space >= 0.29 µm in 1 of 2 axes, arrays over 3×3, on layer Via1NoSealring
+[V1.c] Checking min_enclosure >= 0.01 µm of Via1NoSealring within Metal1
+[V1.c1] Checking min_enclosure >= 0.05 µm of Via1NoSealring within Metal1
+[V2.a] Checking exact_width == 0.19 µm on layer Via2NoSealring (30039/0)
+[V2.b1] Checking min_space >= 0.29 µm in 1 of 2 axes, arrays over 3×3, on layer Via2NoSealring
+[V2.c] Checking min_enclosure >= 0.01 µm of Via2NoSealring within Metal2
+[V2.c1] Checking min_enclosure >= 0.05 µm of Via2NoSealring within Metal2
+[V2.b] Checking min_space >= 0.22 µm between layer Via2NoSealring and Via2NoSealring
+[V3.b] Checking min_space >= 0.22 µm between layer Via3NoSealring and Via3NoSealring
+[V3.b1] Checking min_space >= 0.29 µm in 1 of 2 axes, arrays over 3×3, on layer Via3NoSealring
+[V3.c] Checking min_enclosure >= 0.01 µm of Via3NoSealring within Metal3
+[V3.a] Checking exact_width == 0.19 µm on layer Via3NoSealring (30040/0)
+[V3.c1] Checking min_enclosure >= 0.05 µm of Via3NoSealring within Metal3
+[TV1.b] Checking min_space >= 0.42 µm between layer TopVia1NoSealring and TopVia1NoSealring
+[TV1.c] Checking min_enclosure >= 0.10 µm of TopVia1NoSealring within Metal4
+[TV1.a] Checking exact_width == 0.42 µm on layer TopVia1NoSealring (30042/0)
+[TM1.a] Checking min_width >= 1.64 µm on layer TopMetal1NoSealring (30071/0)
+[TM1.b] Checking min_notch >= 1.64 µm on layer TopMetal1NoSealring (30071/0)
+[TM1.b] Checking min_space >= 1.64 µm between layer TopMetal1NoSealring and TopMetal1NoSealring
+[TV1.d] Checking min_enclosure >= 0.42 µm of TopVia1NoSealring within TopMetal1
+[TM1.c] Checking min_density >= 25.00% on layer(s) [TopMetal1Density]
+[TM1.d] Checking max_density <= 70.00% on layer(s) [TopMetal1Density]
+[TM1Fil.a] Checking min_width >= 5.00 µm on layer TopMetal1.filler (126/22)
+[TM1Fil.a1] Checking max_length <= 10.00 µm on layer TopMetal1.filler
+[TM1.c] Density: 42.32%
+[TM1.d] Density: 42.32%
+[TM1Fil.c] Checking min_space >= 3.00 µm between layer TopMetal1.filler and TopMetal1
+[TM1Fil.b] Checking min_space >= 3.00 µm between layer TopMetal1.filler and TopMetal1.filler
+[TM1Fil.d] Checking min_space >= 4.90 µm between layer TopMetal1.filler and TRANS
+[TM1Fil.d] Checking min_enclosure >= 4.90 µm of TopMetal1FillerInTRANS within TRANS
+[Pas.b] Checking min_space >= 3.50 µm between layer Passiv and Passiv
+[Pas.a] Checking min_width >= 2.10 µm on layer Passiv (9/0)
+[Pas.c] Checking min_enclosure >= 2.10 µm of PassivInSeal within TopMetal1
+[Pas.b] Checking min_notch >= 3.50 µm on layer Passiv (9/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealpSD (30298/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal2 (30300/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal1 (30299/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealActiv (30297/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal3 (30301/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal4 (30302/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal5 (30303/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealTopMetal1 (30304/0)
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealActiv
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal1
+[Seal.a] Checking min_width >= 3.50 µm on layer SealTopMetal2 (30305/0)
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealpSD
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal2
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal5
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal3
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal4
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealTopMetal2
+[Seal.c] Checking max_width <= 0.16 µm on layer SealCont (30306/0)
+[Seal.c] Checking min_width >= 0.16 µm on layer SealCont (30306/0)
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealTopMetal1
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia1 (30307/0)
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia2 (30308/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia2 (30308/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia1 (30307/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia4 (30310/0)
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia3 (30309/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia3 (30309/0)
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia4 (30310/0)
+[Seal.c2] Checking max_width <= 0.42 µm on layer SealTopVia1 (30311/0)
+[Seal.c3] Checking max_width <= 0.90 µm on layer SealTopVia2 (30312/0)
+[Seal.c2] Checking min_width >= 0.42 µm on layer SealTopVia1 (30311/0)
+[Seal.c3] Checking min_width >= 0.90 µm on layer SealTopVia2 (30312/0)
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia1 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia2 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealCont within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia3 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealTopVia1 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealTopVia2 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia4 within SealActiv
+[Seal.e] Checking min_width >= 4.20 µm on layer RingPassiv (30314/0)
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealActiv
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealpSD
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal1
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal2
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal3
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal5
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal4
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealTopMetal1
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealTopMetal2
+[Seal.l] Checking every shape lies inside EdgeSeal.boundary
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal2.slit (10/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal1.slit (8/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal3.slit (30/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal4.slit (50/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal5.slit (67/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer TopMetal1.slit (126/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer TopMetal2.slit (134/24)
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal1.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal2.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal3.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal4.slit
+[Slt.c] Checking wide_uncovered: Metal1NoExempt wider than 30.00 µm must contain Metal1.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of TopMetal2.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal5.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of TopMetal1.slit
+[Slt.c] Checking wide_uncovered: Metal2NoExempt wider than 30.00 µm must contain Metal2.slit
+[Slt.c] Checking wide_uncovered: Metal4NoExempt wider than 30.00 µm must contain Metal4.slit
+[Slt.c] Checking wide_uncovered: Metal3NoExempt wider than 30.00 µm must contain Metal3.slit
+[Slt.c] Checking wide_uncovered: Metal5NoExempt wider than 30.00 µm must contain Metal5.slit
+[Slt.c] Checking wide_uncovered: TopMetal1NoExempt wider than 30.00 µm must contain TopMetal1.slit
+[Slt.c] Checking wide_uncovered: TopMetal2NoExempt wider than 30.00 µm must contain TopMetal2.slit
+[Slt.e] Checking forbidden region on layer Metal1SlitOnPad (30422/0)
+[Slt.e] Checking forbidden region on layer Metal2SlitOnPad (30423/0)
+[Slt.e] Checking forbidden region on layer Metal3SlitOnPad (30424/0)
+[Slt.e] Checking forbidden region on layer Metal4SlitOnPad (30425/0)
+[Slt.e] Checking forbidden region on layer Metal5SlitOnPad (30426/0)
+[Slt.e] Checking forbidden region on layer TopMetal1SlitOnPad (30427/0)
+[Slt.e] Checking forbidden region on layer TopMetal2SlitOnPad (30428/0)
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal1.slit within Metal1
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal2.slit within Metal2
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal4.slit within Metal4
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal3.slit within Metal3
+[Slt.f] Checking min_enclosure >= 1.00 µm of TopMetal2.slit within TopMetal2
+[Slt.f] Checking min_enclosure >= 1.00 µm of TopMetal1.slit within TopMetal1
+[Slt.g] Checking min_space >= 0.60 µm between layer Metal5.slit and MIM
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal5.slit within Metal5
+[Slt.h1] Checking min_space >= 0.30 µm between layer Metal1.slit and Cont
+[Slt.g] Checking min_space >= 0.60 µm between layer TopMetal1.slit and MIM
+[Slt.h1] Checking forbidden: Metal1.slit over Cont not allowed
+[Slt.h1] Checking min_space >= 0.30 µm between layer Metal1.slit and Via1
+[Slt.h1] Checking forbidden: Metal1.slit over Via1 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal2.slit and Via1
+[Slt.h2] Checking forbidden: Metal2.slit over Via1 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal2.slit and Via2
+[Slt.h2] Checking forbidden: Metal2.slit over Via2 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal3.slit and Via2
+[Slt.h2] Checking forbidden: Metal3.slit over Via2 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal3.slit and Via3
+[Slt.h2] Checking forbidden: Metal3.slit over Via3 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal4.slit and Via3
+[Slt.h2] Checking forbidden: Metal4.slit over Via3 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal4.slit and Via4
+[Slt.h2] Checking forbidden: Metal4.slit over Via4 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal5.slit and Via4
+[Slt.h2] Checking forbidden: Metal5.slit over Via4 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal5.slit and TopVia1
+[Slt.h2] Checking forbidden: Metal5.slit over TopVia1 not allowed
+[Slt.h3] Checking min_space >= 1.00 µm between layer TopMetal1.slit and TopVia1
+[Slt.i] Checking min_density >= 6.00% of Metal1.slit in Metal1NoExempt regions > 35 µm
+[Slt.h4] Checking min_space >= 1.00 µm between layer TopMetal2.slit and TopVia2
+[Slt.h3] Checking min_space >= 1.00 µm between layer TopMetal1.slit and TopVia2
+[Slt.i] Checking min_density >= 6.00% of Metal2.slit in Metal2NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of Metal3.slit in Metal3NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of Metal4.slit in Metal4NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of Metal5.slit in Metal5NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of TopMetal2.slit in TopMetal2NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of TopMetal1.slit in TopMetal1NoExempt regions > 35 µm
+[LU.a] Checking max_space <= 20.00 µm from every part of PsdActivInNWell to NActivInNWell
+[LU.b] Checking max_space <= 20.00 µm from every part of NActivInPWell to PsdActivInPWell
+[LU.c] Checking max_space <= 6.00 µm from every part of NWellTieAbuttedNoCont to ContOnPsdActivInNWell
+[LU.c1] Checking max_space <= 6.00 µm from every part of SubstrateTieAbuttedNoCont to ContOnNsdActivInPWell
+[LU.d] Checking max_space <= 6.00 µm from every part of NWellTieStandaloneNoSchottky to ContOnNWellTie
+[LU.d1] Checking max_space <= 6.00 µm from every part of SubstrateTieStandalone to ContOnSubstrateTie
+[Ant.h] Checking forbidden region on layer AntHError (30452/0)
+[Ant.i] Checking forbidden region on layer AntIError (30432/0)
+Topcell: TEST6967
+DRC completed in 4.863s
+DRC clean.
+Report written to: gdscheck/rep_main.lyrdb
+Status: PASS
+===== suite core
+PDK: IHP SG13CMOS5L (0.1)
+Suite: core
+Library: LIB
+Connecting nets ... done (0.4s)
+Memory: planning within 461.8 GB (MemTotal 540.2 GB), 0.1 GB resident, 230.9 GB for the merge cache
+[NW.b1] Checking min_space >= 1.80 µm between layer NWell and NWell
+[Activ.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Activ (1/0)
+[PolyRes.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PolyRes (128/0)
+[GatPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer GatPoly (5/0)
+[Cont.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Cont (6/0)
+[Activ.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Activ.mask (1/20)
+[GatPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer GatPoly.filler (5/22)
+[Activ.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Activ.filler (1/22)
+[pSD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer pSD (14/0)
+[SalBlock.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SalBlock (28/0)
+[ThickGateOx.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ThickGateOx (44/0)
+[nSD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nSD (7/0)
+[nSD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nSD.block (7/21)
+[PLDB.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PLDB (45/0)
+[NLDD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NLDD (112/0)
+[PLDD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PLDD (113/0)
+[NLDB.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NLDB (15/0)
+[PExt.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PExt (115/0)
+[NExtHV.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NExtHV (116/0)
+[PExtHV.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PExtHV (117/0)
+[NExt.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NExt (114/0)
+[NWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer NWell (31/0)
+[PWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PWell (46/0)
+[EXTBlock.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EXTBlock (111/0)
+[nBuLay.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nBuLay (32/0)
+[PWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PWell.block (46/21)
+[nBuLay.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nBuLay.block (32/21)
+[isoNWell.offgrid] Checking offgrid (grid = 0.0050 µm) on layer isoNWell (257/0)
+[INLDPWL.offgrid] Checking offgrid (grid = 0.0050 µm) on layer INLDPWL (127/0)
+[IC.offgrid] Checking offgrid (grid = 0.0050 µm) on layer IC (48/0)
+[nBuLayCut.offgrid] Checking offgrid (grid = 0.0050 µm) on layer nBuLayCut (131/0)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1 (8/0)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2 (10/0)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3 (30/0)
+[Substrate.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Substrate (40/0)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2.mask (10/20)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1.mask (8/20)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3.mask (30/20)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3.filler (30/22)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2.filler (10/22)
+[Metal3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal3.slit (30/24)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1.filler (8/22)
+[Metal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal2.slit (10/24)
+[Metal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal1.slit (8/24)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4 (50/0)
+[Via1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via1 (19/0)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5 (67/0)
+[Via2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via2 (29/0)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4.mask (50/20)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5.mask (67/20)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5.filler (67/22)
+[Metal5.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal5.slit (67/24)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4.filler (50/22)
+[Metal4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Metal4.slit (50/24)
+[Via4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via4 (66/0)
+[Vmim.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Vmim (129/0)
+[Via3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Via3 (49/0)
+[MIM.offgrid] Checking offgrid (grid = 0.0050 µm) on layer MIM (36/0)
+[TopVia2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopVia2 (133/0)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1 (126/0)
+[TopVia1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopVia1 (125/0)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2 (134/0)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1.mask (126/20)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2.mask (134/20)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2.filler (134/22)
+[TopMetal2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal2.slit (134/24)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1.filler (126/22)
+[TopMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer TopMetal1.slit (126/24)
+[BackPassiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackPassiv (23/0)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv (9/0)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1 (20/0)
+[AntMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer AntMetal1 (132/0)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv.pillar (9/35)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1.mask (20/20)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1.filler (20/22)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv.sbump (9/36)
+[BackMetal1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BackMetal1.slit (20/24)
+[Passiv.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Passiv.pdl (9/40)
+[DeepVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer DeepVia (152/0)
+[BiWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BiWind (3/0)
+[AlCuStop.offgrid] Checking offgrid (grid = 0.0050 µm) on layer AlCuStop (159/0)
+[LBE.offgrid] Checking offgrid (grid = 0.0050 µm) on layer LBE (157/0)
+[BasPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer BasPoly (13/0)
+[EmWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EmWind (33/0)
+[PEmWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PEmWind (11/0)
+[EmWiHV.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EmWiHV (156/0)
+[PEmPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PEmPoly (53/0)
+[DeepCo.offgrid] Checking offgrid (grid = 0.0050 µm) on layer DeepCo (35/0)
+[EmPoly.offgrid] Checking offgrid (grid = 0.0050 µm) on layer EmPoly (55/0)
+[PBiWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer PBiWind (58/0)
+[ColWind.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ColWind (139/0)
+[CtrGat.offgrid] Checking offgrid (grid = 0.0050 µm) on layer CtrGat (154/0)
+[LDMOS.offgrid] Checking offgrid (grid = 0.0050 µm) on layer LDMOS (57/0)
+[ColOpen.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ColOpen (101/0)
+[FGEtch.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FGEtch (153/0)
+[FLM.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FLM (142/0)
+[FBE.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FBE (54/0)
+[FGImp.offgrid] Checking offgrid (grid = 0.0050 µm) on layer FGImp (155/0)
+[ThinFilmRes.offgrid] Checking offgrid (grid = 0.0050 µm) on layer ThinFilmRes (146/0)
+[GraphGate.offgrid] Checking offgrid (grid = 0.0050 µm) on layer GraphGate (118/0)
+[MEMPAD.offgrid] Checking offgrid (grid = 0.0050 µm) on layer MEMPAD (124/0)
+[HafniumOx.offgrid] Checking offgrid (grid = 0.0050 µm) on layer HafniumOx (143/0)
+[RFMEM.offgrid] Checking offgrid (grid = 0.0050 µm) on layer RFMEM (147/0)
+[Sensor.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Sensor (136/0)
+[MEMVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer MEMVia (145/0)
+[SNSRing.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSRing (135/0)
+[SNSCMOSVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSCMOSVia (138/0)
+[SNSBotVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSBotVia (149/0)
+[SNSTopVia.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSTopVia (151/0)
+[SNSArms.offgrid] Checking offgrid (grid = 0.0050 µm) on layer SNSArms (137/0)
+[Exchange2.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange2 (192/0)
+[Exchange0.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange0 (190/0)
+[prBoundary.offgrid] Checking offgrid (grid = 0.0050 µm) on layer prBoundary (189/0)
+[Exchange1.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange1 (191/0)
+[Exchange4.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange4 (194/0)
+[Exchange3.offgrid] Checking offgrid (grid = 0.0050 µm) on layer Exchange3 (193/0)
+[Activ.angle45] Checking no_angle: non-orthogonal ActivNotCircle edges
+[GatPoly.angle45] Checking no_angle: non-orthogonal GatPolyNotCircle edges
+[Metal2.angle45] Checking no_angle: non-orthogonal Metal2NotCircle edges
+[Metal3.angle45] Checking no_angle: non-orthogonal Metal3NotCircle edges
+[Metal4.angle45] Checking no_angle: non-orthogonal Metal4NotCircle edges
+[Metal1.angle45] Checking no_angle: non-orthogonal Metal1NotCircle edges
+[Cont.angle90] Checking no_angle: non-orthogonal ContNotCircle edges
+[Metal5.angle45] Checking no_angle: non-orthogonal Metal5NotCircle edges
+[TopMetal1.angle45] Checking no_angle: non-orthogonal TopMetal1NotCircle edges
+[TopMetal2.angle45] Checking no_angle: non-orthogonal TopMetal2NotCircle edges
+[Via4.angle90] Checking no_angle: non-orthogonal Via4NotCircle edges
+[Via1.angle90] Checking no_angle: non-orthogonal Via1NotCircle edges
+[Via2.angle90] Checking no_angle: non-orthogonal Via2NotCircle edges
+[Via3.angle90] Checking no_angle: non-orthogonal Via3NotCircle edges
+[Activ.acute] Checking no_corner: Activ corners from 93.0° to 180.0°
+[Vmim.angle90] Checking no_angle: non-orthogonal VmimNotCircle edges
+[TopVia1.angle90] Checking no_angle: non-orthogonal TopVia1NotCircle edges
+[TopVia2.angle90] Checking no_angle: non-orthogonal TopVia2NotCircle edges
+[GatPoly.acute] Checking no_corner: GatPoly.filler corners from 93.0° to 180.0°
+[Activ.acute] Checking no_corner: Activ.mask corners from 93.0° to 180.0°
+[GatPoly.acute] Checking no_corner: GatPoly corners from 93.0° to 180.0°
+[Activ.acute] Checking no_corner: Activ.filler corners from 93.0° to 180.0°
+[Cont.acute] Checking no_corner: Cont corners from 93.0° to 180.0°
+[nSD.acute] Checking no_corner: nSD.block corners from 93.0° to 180.0°
+[nSD.acute] Checking no_corner: nSD corners from 93.0° to 180.0°
+[PolyRes.acute] Checking no_corner: PolyRes corners from 93.0° to 180.0°
+[pSD.acute] Checking no_corner: pSD corners from 93.0° to 180.0°
+[SalBlock.acute] Checking no_corner: SalBlock corners from 93.0° to 180.0°
+[ThickGateOx.acute] Checking no_corner: ThickGateOx corners from 93.0° to 180.0°
+[NLDB.acute] Checking no_corner: NLDB corners from 93.0° to 180.0°
+[NLDD.acute] Checking no_corner: NLDD corners from 93.0° to 180.0°
+[PLDD.acute] Checking no_corner: PLDD corners from 93.0° to 180.0°
+[PLDB.acute] Checking no_corner: PLDB corners from 93.0° to 180.0°
+[NExt.acute] Checking no_corner: NExt corners from 93.0° to 180.0°
+[NExtHV.acute] Checking no_corner: NExtHV corners from 93.0° to 180.0°
+[PExtHV.acute] Checking no_corner: PExtHV corners from 93.0° to 180.0°
+[EXTBlock.acute] Checking no_corner: EXTBlock corners from 93.0° to 180.0°
+[PExt.acute] Checking no_corner: PExt corners from 93.0° to 180.0°
+[NWell.acute] Checking no_corner: NWell corners from 93.0° to 180.0°
+[PWell.acute] Checking no_corner: PWell corners from 93.0° to 180.0°
+[PWell.acute] Checking no_corner: PWell.block corners from 93.0° to 180.0°
+[nBuLay.acute] Checking no_corner: nBuLay corners from 93.0° to 180.0°
+[nBuLayCut.acute] Checking no_corner: nBuLayCut corners from 93.0° to 180.0°
+[isoNWell.acute] Checking no_corner: isoNWell corners from 93.0° to 180.0°
+[nBuLay.acute] Checking no_corner: nBuLay.block corners from 93.0° to 180.0°
+[INLDPWL.acute] Checking no_corner: INLDPWL corners from 93.0° to 180.0°
+[Substrate.acute] Checking no_corner: Substrate corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1 corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1.mask corners from 93.0° to 180.0°
+[IC.acute] Checking no_corner: IC corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1.slit corners from 93.0° to 180.0°
+[Metal1.acute] Checking no_corner: Metal1.filler corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2.mask corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2 corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2.slit corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3 corners from 93.0° to 180.0°
+[Metal2.acute] Checking no_corner: Metal2.filler corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3.mask corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3.filler corners from 93.0° to 180.0°
+[Metal3.acute] Checking no_corner: Metal3.slit corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4 corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4.mask corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5 corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4.filler corners from 93.0° to 180.0°
+[Metal4.acute] Checking no_corner: Metal4.slit corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5.mask corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5.slit corners from 93.0° to 180.0°
+[Via1.acute] Checking no_corner: Via1 corners from 93.0° to 180.0°
+[Via2.acute] Checking no_corner: Via2 corners from 93.0° to 180.0°
+[Metal5.acute] Checking no_corner: Metal5.filler corners from 93.0° to 180.0°
+[Via3.acute] Checking no_corner: Via3 corners from 93.0° to 180.0°
+[Via4.acute] Checking no_corner: Via4 corners from 93.0° to 180.0°
+[Vmim.acute] Checking no_corner: Vmim corners from 93.0° to 180.0°
+[MIM.acute] Checking no_corner: MIM corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1.mask corners from 93.0° to 180.0°
+[TopVia1.acute] Checking no_corner: TopVia1 corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1 corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1.filler corners from 93.0° to 180.0°
+[TopVia2.acute] Checking no_corner: TopVia2 corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2 corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2.mask corners from 93.0° to 180.0°
+[TopMetal1.acute] Checking no_corner: TopMetal1.slit corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2.slit corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv.pillar corners from 93.0° to 180.0°
+[TopMetal2.acute] Checking no_corner: TopMetal2.filler corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv.pdl corners from 93.0° to 180.0°
+[AntMetal1.acute] Checking no_corner: AntMetal1 corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1 corners from 93.0° to 180.0°
+[Passiv.acute] Checking no_corner: Passiv.sbump corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1.filler corners from 93.0° to 180.0°
+[BackPassiv.acute] Checking no_corner: BackPassiv corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1.slit corners from 93.0° to 180.0°
+[BackMetal1.acute] Checking no_corner: BackMetal1.mask corners from 93.0° to 180.0°
+[DeepVia.acute] Checking no_corner: DeepVia corners from 93.0° to 180.0°
+[LBE.acute] Checking no_corner: LBE corners from 93.0° to 180.0°
+[AlCuStop.acute] Checking no_corner: AlCuStop corners from 93.0° to 180.0°
+[BiWind.acute] Checking no_corner: BiWind corners from 93.0° to 180.0°
+[BasPoly.acute] Checking no_corner: BasPoly corners from 93.0° to 180.0°
+[EmWind.acute] Checking no_corner: EmWind corners from 93.0° to 180.0°
+[EmWiHV.acute] Checking no_corner: EmWiHV corners from 93.0° to 180.0°
+[PEmWind.acute] Checking no_corner: PEmWind corners from 93.0° to 180.0°
+[PEmPoly.acute] Checking no_corner: PEmPoly corners from 93.0° to 180.0°
+[DeepCo.acute] Checking no_corner: DeepCo corners from 93.0° to 180.0°
+[PBiWind.acute] Checking no_corner: PBiWind corners from 93.0° to 180.0°
+[EmPoly.acute] Checking no_corner: EmPoly corners from 93.0° to 180.0°
+[ColWind.acute] Checking no_corner: ColWind corners from 93.0° to 180.0°
+[CtrGat.acute] Checking no_corner: CtrGat corners from 93.0° to 180.0°
+[LDMOS.acute] Checking no_corner: LDMOS corners from 93.0° to 180.0°
+[ColOpen.acute] Checking no_corner: ColOpen corners from 93.0° to 180.0°
+[FGEtch.acute] Checking no_corner: FGEtch corners from 93.0° to 180.0°
+[FGImp.acute] Checking no_corner: FGImp corners from 93.0° to 180.0°
+[FBE.acute] Checking no_corner: FBE corners from 93.0° to 180.0°
+[FLM.acute] Checking no_corner: FLM corners from 93.0° to 180.0°
+[ThinFilmRes.acute] Checking no_corner: ThinFilmRes corners from 93.0° to 180.0°
+[GraphGate.acute] Checking no_corner: GraphGate corners from 93.0° to 180.0°
+[MEMPAD.acute] Checking no_corner: MEMPAD corners from 93.0° to 180.0°
+[HafniumOx.acute] Checking no_corner: HafniumOx corners from 93.0° to 180.0°
+[RFMEM.acute] Checking no_corner: RFMEM corners from 93.0° to 180.0°
+[SNSRing.acute] Checking no_corner: SNSRing corners from 93.0° to 180.0°
+[Sensor.acute] Checking no_corner: Sensor corners from 93.0° to 180.0°
+[MEMVia.acute] Checking no_corner: MEMVia corners from 93.0° to 180.0°
+[SNSCMOSVia.acute] Checking no_corner: SNSCMOSVia corners from 93.0° to 180.0°
+[SNSTopVia.acute] Checking no_corner: SNSTopVia corners from 93.0° to 180.0°
+[SNSBotVia.acute] Checking no_corner: SNSBotVia corners from 93.0° to 180.0°
+[SNSArms.acute] Checking no_corner: SNSArms corners from 93.0° to 180.0°
+[prBoundary.acute] Checking no_corner: prBoundary corners from 93.0° to 180.0°
+[Exchange0.acute] Checking no_corner: Exchange0 corners from 93.0° to 180.0°
+[Exchange2.acute] Checking no_corner: Exchange2 corners from 93.0° to 180.0°
+[Exchange1.acute] Checking no_corner: Exchange1 corners from 93.0° to 180.0°
+[Exchange4.acute] Checking no_corner: Exchange4 corners from 93.0° to 180.0°
+[Exchange3.acute] Checking no_corner: Exchange3 corners from 93.0° to 180.0°
+[forbidden] Checking forbidden region on layer BiWind (3/0)
+[forbidden] Checking forbidden region on layer PEmWind (11/0)
+[forbidden] Checking forbidden region on layer BasPoly (13/0)
+[forbidden] Checking forbidden region on layer DeepCo (35/0)
+[forbidden] Checking forbidden region on layer PEmPoly (53/0)
+[forbidden] Checking forbidden region on layer EmPoly (55/0)
+[forbidden] Checking forbidden region on layer LDMOS (57/0)
+[forbidden] Checking forbidden region on layer PBiWind (58/0)
+[forbidden] Checking forbidden region on layer NoDRC (62/0)
+[forbidden] Checking forbidden region on layer Flash (71/0)
+[forbidden] Checking forbidden region on layer ColWind (139/0)
+[forbidden] Checking forbidden region on layer Metal5 (67/0)
+[forbidden] Checking forbidden region on layer Metal5.filler (67/22)
+[forbidden] Checking forbidden region on layer Via4 (66/0)
+[forbidden] Checking forbidden region on layer TopMetal2 (134/0)
+[forbidden] Checking forbidden region on layer TopMetal2.filler (134/22)
+[forbidden] Checking forbidden region on layer TopVia2 (133/0)
+[forbidden] Checking forbidden region on layer TRANS (26/0)
+[forbidden] Checking forbidden region on layer nBuLay (32/0)
+[forbidden] Checking forbidden region on layer MIM (36/0)
+[forbidden] Checking forbidden region on layer Vmim (129/0)
+[Pin.a] Checking forbidden: Activ.pin not covered by Activ
+[Pin.b] Checking forbidden: GatPoly.pin not covered by GatPoly
+[Pin.e] Checking forbidden: Metal1.pin not covered by Metal1
+[Pin.f] Checking forbidden: Metal2.pin not covered by Metal2
+[Pin.f] Checking forbidden: Metal3.pin not covered by Metal3
+[Pin.f] Checking forbidden: Metal4.pin not covered by Metal4
+[Pin.f] Checking forbidden: Metal5.pin not covered by Metal5
+[Pin.g] Checking forbidden: TopMetal1.pin not covered by TopMetal1
+[Pin.h] Checking forbidden: TopMetal2.pin not covered by TopMetal2
+[LBE.b1] Checking max_area <= 250000.0000 µm² on layer LBE
+[LBE.b2] Checking min_area >= 30000.0000 µm² on layer LBE
+[LBE.a] Checking min_width >= 100.00 µm on layer LBE (157/0)
+[LBE.b] Checking max_length <= 1500.00 µm on layer LBE
+[LBE.c] Checking min_notch >= 100.00 µm on layer LBE (157/0)
+[LBE.d] Checking min_space >= 150.00 µm between layer LBE and EdgeSeal
+[LBE.e] Checking min_space >= 50.00 µm between layer LBE and dfpad
+[LBE.c] Checking min_space >= 100.00 µm between layer LBE and LBE
+[LBE.e] Checking min_space >= 50.00 µm between layer LBE and Passiv
+[LBE.e] Checking forbidden: LBE over dfpad not allowed
+[LBE.e] Checking forbidden: LBE over Passiv not allowed
+[LBE.f] Checking min_space >= 30.00 µm between layer LBE and Activ
+[LBE.i] Checking max_density <= 20.00% on layer(s) [LBE]
+[LBE.h] Checking no LBE ring on layer LBE (157/0)
+[Pad.a1] Checking max_width <= 150.00 µm on layer PassivDfpad (30315/0)
+[LBE.i] Density: 0.00%
+[Pad.d] Checking min_space >= 7.50 µm between layer PassivDfpad and SealActiv
+[Pad.i] Checking forbidden region on layer DfpadNoTopMetal1 (30481/0)
+[Padb.a] Checking exact_dim == 60.00 µm on layer SBumpPad
+[Padb.a] Checking exact_length == 60.00 µm on layer SBumpPad
+[Padb.b] Checking min_space >= 70.00 µm between layer SBumpPad and SBumpPad
+[Padb.c] Checking min_enclosure >= 10.00 µm of SBumpPad within TopMetal1
+[Padb.d] Checking min_space >= 50.00 µm between layer SBumpPad and EdgeSeal
+[Padb.f] Checking forbidden region on layer SBumpPadBadShape (30020/0)
+[Padc.a] Checking forbidden region on layer CuPillarPadOffSize (30030/0)
+[Padc.b] Checking min_space >= 40.00 µm between layer CuPillarPad and CuPillarPad
+[Padc.b] Checking min_space >= 50.00 µm between layer CuPillarPad45 and CuPillarPad45
+[Padc.b] Checking min_space >= 50.00 µm between layer CuPillarPad45 and CuPillarPadNot45
+[Padc.c] Checking min_enclosure >= 7.50 µm of CuPillarPad within TopMetal1
+[Padc.d] Checking forbidden region on layer PadcDBad (30035/0)
+[Padc.f] Checking forbidden region on layer CuPillarPadBadShape (30021/0)
+[Act.a] Checking min_width >= 0.15 µm on layer Activ (1/0)
+[Act.c] Checking min_enclosure >= 0.23 µm of GatPoly within Activ
+[Act.b] Checking min_notch >= 0.21 µm on layer Activ (1/0)
+[Act.b] Checking min_space >= 0.21 µm between layer Activ and Activ
+[Act.e] Checking min_area >= 0.1500 µm² on layer ActivHoleEmpty
+[Act.d] Checking min_area >= 0.1220 µm² on layer Activ
+[AFil.a] Checking max_width <= 5.00 µm on layer Activ.filler (1/22)
+[AFil.a1] Checking min_width >= 1.00 µm on layer Activ.filler (1/22)
+[AFil.c] Checking min_space >= 1.10 µm between layer Activ.filler and GatPoly
+[AFil.b] Checking min_space >= 0.42 µm between layer Activ.filler and Activ.filler
+[AFil.c1] Checking min_space >= 0.42 µm between layer Activ.filler and Activ
+[AFil.c] Checking min_space >= 1.10 µm between layer Activ.filler and Cont
+[AFil.d] Checking min_space >= 1.00 µm between layer Activ.filler and nBuLayDerived
+[AFil.d] Checking min_enclosure >= 1.00 µm of ActivFillerInNWell within NWell
+[AFil.d] Checking min_space >= 1.00 µm between layer Activ.filler and NWell
+[AFil.d] Checking min_enclosure >= 1.00 µm of ActivFillerInNBuLay within nBuLayDerived
+[AFil.i] Checking min_space >= 1.50 µm between layer Activ.filler and PWell.block
+[AFil.i] Checking min_enclosure >= 1.50 µm of ActivFillerWithinPWellBlock within PWell.block
+[AFil.e] Checking min_enclosure >= 1.00 µm of ActivFillerInTRANS within TRANS
+[AFil.e] Checking min_space >= 1.00 µm between layer Activ.filler and TRANS
+[TGO.b] Checking min_space >= 0.27 µm between layer ThickGateOx and ActivOutsideTGO
+[TGO.c] Checking min_enclosure >= 0.34 µm of GatPoly within ThickGateOx
+[TGO.a] Checking min_enclosure >= 0.27 µm of Activ within ThickGateOx
+[AFil.j] Checking min_enclosure >= 0.25 µm of ActivFillerInPWellBlock within nSDBlockAndSalBlock
+[TGO.e] Checking min_space >= 0.86 µm between layer ThickGateOx and ThickGateOx
+[TGO.f] Checking min_width >= 0.86 µm on layer ThickGateOx (44/0)
+[TGO.e] Checking min_notch >= 0.86 µm on layer ThickGateOx (44/0)
+[TGO.d] Checking min_space >= 0.34 µm between layer ThickGateOx and GatPolyOverActivOutsideTGO
+[Gat.a1] Checking min_gate_length >= 0.13 µm of GatPoly between its walls shared with the boundary of GatPolyOverNsdActivNoTGONoVaricap
+[Gat.a3] Checking min_gate_length >= 0.45 µm of GatPoly between its walls shared with the boundary of GatPolyOverNsdActivTGONoVaricap
+[Gat.a2] Checking min_gate_length >= 0.13 µm of GatPoly between its walls shared with the boundary of GatPolyOverPsdActivNoTGONoVaricap
+[Gat.a] Checking min_width >= 0.13 µm on layer GatPoly (5/0)
+[Gat.b] Checking min_space >= 0.18 µm between layer GatPoly and GatPoly
+[Gat.b1] Checking min_space >= 0.25 µm between layer GatPolyHV and GatPolyHV
+[Gat.a4] Checking min_gate_length >= 0.40 µm of GatPoly between its walls shared with the boundary of GatPolyOverPsdActivTGONoVaricap
+[Gat.b] Checking min_notch >= 0.18 µm on layer GatPoly (5/0)
+[Gat.c] Checking min_enclosure >= 0.18 µm of Activ within GatPolyNoSRAM
+[Gat.c] Checking forbidden region on layer GatPolyInsideActiv (30284/0)
+[Gat.d] Checking min_space >= 0.07 µm between layer GatPoly and Activ
+[Gat.e] Checking min_area >= 0.0900 µm² on layer GatPoly
+[Gat.f] Checking forbidden region on layer GatPolyOverActivNotRect (30283/0)
+[GFil.b] Checking min_width >= 0.70 µm on layer GatPoly.filler (5/22)
+[Gat.g] Checking min_width >= 0.16 µm on layer GatPoly (5/0)
+[GFil.a] Checking max_width <= 5.00 µm on layer GatPoly.filler (5/22)
+[GFil.c] Checking min_space >= 0.80 µm between layer GatPoly.filler and GatPoly.filler
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and Cont
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and Activ
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and GatPoly
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and pSD
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and nSD.block
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and SalBlock
+[GFil.d] Checking forbidden region on layer GatPolyFillerOverGFilD (30287/0)
+[GFil.f] Checking min_space >= 1.10 µm between layer GatPoly.filler and TRANS
+[GFil.e] Checking min_space >= 1.10 µm between layer GatPoly.filler and NWell
+[GFil.i] Checking max_area <= 160000.0000 µm² on layer GatPoly.nofill
+[GFil.e] Checking min_space >= 1.10 µm between layer GatPoly.filler and nBuLayDerived
+[GFil.j] Checking min_enclosure >= 0.18 µm of Activ.filler within GatPoly.filler
+[GFil.j] Checking forbidden region on layer GatPolyFillerInsideActivFiller (30285/0)
+[EXTB.c] Checking min_space >= 0.31 µm between layer EXTBlock and pSD
+[EXTB.a] Checking min_width >= 0.31 µm on layer EXTBlock (111/0)
+[EXTB.b] Checking min_space >= 0.31 µm between layer EXTBlock and EXTBlock
+[EXTB.b] Checking min_notch >= 0.31 µm on layer EXTBlock (111/0)
+[Cnt.b] Checking min_space >= 0.18 µm between layer ContSquare and ContSquare
+[Cnt.b1] Checking min_space >= 0.20 µm in 1 of 2 axes, arrays over 4×4, on layer ContSquare
+[Cnt.c] Checking min_enclosure >= 0.07 µm of ContOnActivAna within Activ
+[Cnt.a] Checking exact_width == 0.16 µm on layer ContSquare (30076/0)
+[Cnt.f] Checking min_space >= 0.11 µm between layer ContOnActivNoVaricap and GatPoly
+[Cnt.c.dig] Checking min_enclosure >= 0.05 µm of ContOnActivDig within Activ
+[Cnt.e] Checking min_space >= 0.14 µm between layer ContOnGatPolyNoVaricap and Activ
+[Cnt.d] Checking min_enclosure >= 0.07 µm of ContOnGatPoly within GatPoly
+[Cnt.g] Checking forbidden: ContSquare not covered by Activ or GatPoly
+[Cnt.g2] Checking min_enclosure >= 0.09 µm of ContOnPsdActiv within pSD
+[Cnt.g1] Checking min_space >= 0.09 µm between layer pSD and ContOnNsdActiv
+[Cnt.h] Checking forbidden: ContSquare not covered by Metal1
+[Cnt.j] Checking forbidden: ContOnGatPolyNoVaricap over Activ not allowed
+[CntB.a] Checking max_dim <= 0.16 µm on layer ContBarNoSchottky
+[CntB.b] Checking min_space >= 0.28 µm between layer ContBar and ContBar
+[CntB.a] Checking min_dim >= 0.16 µm on layer ContBarNoSchottky
+[CntB.a1] Checking min_length >= 0.34 µm on layer ContBar
+[CntB.b1] Checking min_space >= 0.36 µm between layer ContBar and ContBar
+[CntB.d] Checking min_enclosure >= 0.07 µm of ContBarOnGatPoly within GatPoly
+[CntB.b2] Checking min_space >= 0.22 µm between layer ContBar and Cont
+[CntB.c] Checking min_enclosure >= 0.07 µm of ContBarOnActiv within Activ
+[CntB.e] Checking min_space >= 0.14 µm between layer ContBarOnGatPoly and Activ
+[CntB.f] Checking min_space >= 0.11 µm between layer ContBarOnActiv and GatPoly
+[CntB.g] Checking forbidden: ContBar not covered by Activ or GatPoly
+[CntB.g1] Checking min_space >= 0.09 µm between layer pSD and ContBarOnNsdActiv
+[CntB.g2] Checking min_enclosure >= 0.09 µm of ContBarOnPsdActiv within pSD
+[CntB.h] Checking forbidden: ContBar not covered by Metal1
+[CntB.h1] Checking min_enclosure >= 0.05 µm of ContBar within Metal1
+[CntB.j] Checking forbidden: ContBarOnGatPoly over Activ not allowed
+[Sal.b] Checking min_space >= 0.42 µm between layer SalBlock and SalBlock
+[Sal.a] Checking min_width >= 0.42 µm on layer SalBlock (28/0)
+[Sal.b] Checking min_notch >= 0.42 µm on layer SalBlock (28/0)
+[Sal.c] Checking min_enclosure >= 0.20 µm of ActivOrGatPoly within SalBlock
+[Sal.e] Checking min_space >= 0.20 µm between layer SalBlock and Cont
+[Sal.d] Checking min_space >= 0.20 µm between layer SalBlock and ActivOrGatPoly
+[Sal.d] Checking min_space >= 0.20 µm between layer SalBlock and ActivOrGatPoly
+[nSDB.a] Checking min_width >= 0.31 µm on layer nSD.block (7/21)
+[nSDB.b] Checking min_notch >= 0.31 µm on layer nSD.block (7/21)
+[nSDB.c] Checking min_space >= 0.31 µm between layer nSD.block and pSD
+[nSDB.c] Checking min_space >= 0.31 µm between layer nSD.block and pSD
+[nSDB.b] Checking min_space >= 0.31 µm between layer nSD.block and nSD.block
+[nSDB.e] Checking forbidden: nSD.block over Cont not allowed
+[pSD.a] Checking min_width >= 0.31 µm on layer pSD (14/0)
+[pSD.b] Checking min_space >= 0.31 µm between layer pSD and pSD
+[pSD.c] Checking min_enclosure >= 0.18 µm of ActivInNWellNoVaricap within pSD
+[pSD.b] Checking min_notch >= 0.31 µm on layer pSD (14/0)
+[pSD.c1] Checking min_enclosure >= 0.03 µm of PsdC1Target within pSD
+[pSD.d] Checking min_space >= 0.18 µm between layer pSD and NActivInPWell
+[pSD.d1] Checking min_space >= 0.03 µm between layer pSD and NActivInNWell
+[pSD.e] Checking forbidden region on layer TieTooNarrowNoVaricap (30224/0)
+[pSD.f] Checking forbidden region on layer PsdFBad (30167/0)
+[pSD.g] Checking min_area >= 0.0900 µm² on layer NTapAbutted
+[pSD.g] Checking min_area >= 0.0900 µm² on layer PTapAbutted
+[pSD.i] Checking forbidden region on layer PsdIShort (30403/0)
+[pSD.i1] Checking forbidden region on layer PsdI1Short (30413/0)
+[pSD.j] Checking min_space >= 0.30 µm between layer pSDNoSRAM and GatPolyOverNsdActivNoTGONoSVaricap
+[pSD.l] Checking min_area >= 0.2500 µm² on layer PsdHoleEmpty
+[pSD.k] Checking min_area >= 0.2500 µm² on layer pSD
+[pSD.j1] Checking min_space >= 0.40 µm between layer pSDNoSRAM and GatPolyOverNsdActivTGONoSVaricap
+[pSD.m] Checking min_space >= 0.18 µm between layer GPRsilExtended and pSD
+[Rsil.a] Checking min_width >= 0.50 µm on layer RsilAll (30176/0)
+[Rsil.b] Checking min_space >= 0.12 µm between layer RES and Cont
+[pSD.n] Checking min_enclosure >= 0.18 µm of RppdAll within pSD
+[Rsil.c] Checking forbidden region on layer RsilResInset (30183/0)
+[Rsil.e] Checking min_enclosure >= 0.18 µm of GPRsilExtended within EXTBlock
+[Rppd.a] Checking min_width >= 0.50 µm on layer RppdAll (30186/0)
+[Rsil.d] Checking min_space >= 0.18 µm between layer GPRsilExtended and pSD
+[Rsil.f] Checking min_width >= 0.50 µm on layer RES (24/0)
+[Rppd.c] Checking min_space >= 0.20 µm between layer RppdCont and SalBlockRppd
+[Rppd.b] Checking min_enclosure >= 0.18 µm of GPRppdExtended within pSD
+[Rppd.c] Checking forbidden region on layer RppdContTooFar (30191/0)
+[Rppd.e] Checking min_width >= 0.50 µm on layer SalBlockRppd (30188/0)
+[Rhi.a] Checking min_width >= 0.50 µm on layer RhighA (30173/0)
+[Rppd.d] Checking min_enclosure >= 0.18 µm of GPRppdExtended within EXTBlock
+[Rhi.b] Checking forbidden region on layer NsdMismatchAtRhigh (30200/0)
+[Rhi.b] Checking forbidden region on layer PsdMismatchAtRhigh (30202/0)
+[Rhi.c] Checking min_enclosure >= 0.18 µm of GPRhighExtended within pSDnSD
+[Rhi.d] Checking min_space >= 0.20 µm between layer RhighCont and SalBlockRhigh
+[Rhi.d] Checking forbidden region on layer RhighContTooFar (30195/0)
+[Rhi.f] Checking min_width >= 0.50 µm on layer SalBlockRhigh (30174/0)
+[NW.a] Checking min_width >= 0.62 µm on layer NWell (31/0)
+[NW.b] Checking min_space >= 0.62 µm between layer NWell and NWell
+[Rhi.e] Checking min_enclosure >= 0.18 µm of GPRhighExtended within EXTBlock
+[NW.c] Checking min_enclosure >= 0.31 µm of PsdActivInNWellNoTGONoSRAMVaricap within NWell
+[NW.b] Checking min_notch >= 0.62 µm on layer NWell (31/0)
+[NW.c1] Checking min_enclosure >= 0.62 µm of PsdActivInNWellTGOAnaNoDevice within NWell
+[NW.c1.dig] Checking min_enclosure >= 0.31 µm of PsdActivInNWellTGODigNoVaricap within NWell
+[NW.d1.dig] Checking min_space >= 0.31 µm between layer NWellNoSRAM and NActExtTGODig
+[NW.e] Checking min_enclosure >= 0.24 µm of NWellTieNoTGO within NWell
+[NW.d1] Checking min_space >= 0.62 µm between layer NWellNoSRAM and NActExtTGOAna
+[NW.d] Checking min_space >= 0.31 µm between layer NWellNoSRAM and NActExtNoTGO
+[NW.e1.dig] Checking min_enclosure >= 0.24 µm of NWellTieTGODig within NWell
+[NW.f] Checking min_space >= 0.24 µm between layer NWellNoVaricap and SubstrateTieNoTGO
+[NW.f1] Checking min_space >= 0.62 µm between layer NWellNoVaricap and SubstrateTieTGOAna
+[NW.e1] Checking min_enclosure >= 0.62 µm of NWellTieTGOAnaNoDevice within NWell
+[PWB.a] Checking min_width >= 0.62 µm on layer PWell.block (46/21)
+[PWB.b] Checking min_space >= 0.62 µm between layer PWell.block and PWell.block
+[PWB.b] Checking min_notch >= 0.62 µm on layer PWell.block (46/21)
+[NW.f1.dig] Checking min_space >= 0.24 µm between layer NWellNoVaricap and SubstrateTieTGODig
+[PWB.c] Checking min_space >= 0.62 µm between layer PWell.block and NWell
+[PWB.e1] Checking min_space >= 0.62 µm between layer PWell.block and NsdActivInPWellTGO
+[PWB.e] Checking min_space >= 0.31 µm between layer PWell.block and NsdActivInPWellNoTGO
+[PWB.c] Checking min_space >= 0.62 µm between layer PWell.block and NWell
+[PWB.f1] Checking min_space >= 0.62 µm between layer PWellBlockNoSchottky and PsdActivInPWellTGO
+[PWB.f] Checking min_space >= 0.24 µm between layer PWell.block and PsdActivInPWellNoTGO
+[M1.a] Checking min_width >= 0.16 µm on layer Metal1NoSealring (30043/0)
+[M1.b] Checking min_space >= 0.18 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1.d] Checking min_area >= 0.0900 µm² on layer Metal1NoSealring
+[M1.b] Checking min_notch >= 0.18 µm on layer Metal1NoSealring (30043/0)
+[M1.c] Checking min_enclosure >= 0.00 µm of ContNoSealring within Metal1
+[M1.c1] Checking min_enclosure >= 0.05 µm of ContNoSealring within Metal1
+[M1.g] Checking min_width >= 0.20 µm on layer Metal1NoSealring (30043/0)
+[M1.i] Checking min_space >= 0.22 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1.f] Checking min_space >= 0.60 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1.e] Checking min_space >= 0.22 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1Fil.a1] Checking min_width >= 1.00 µm on layer Metal1.filler (8/22)
+[M1Fil.b] Checking min_space >= 0.42 µm between layer Metal1.filler and Metal1.filler
+[M1Fil.a2] Checking max_length <= 5.00 µm on layer Metal1.filler
+[M1Fil.c] Checking min_space >= 0.42 µm between layer Metal1.filler and Metal1
+[M2.b] Checking min_space >= 0.21 µm between layer Metal2NoSealring and Metal2NoSealring
+[M1Fil.d] Checking min_space >= 1.00 µm between layer Metal1.filler and TRANS
+[M2.a] Checking min_width >= 0.20 µm on layer Metal2NoSealring (30044/0)
+[M1Fil.d] Checking min_enclosure >= 1.00 µm of Metal1FillerInTRANS within TRANS
+[M2.d] Checking min_area >= 0.1440 µm² on layer Metal2NoSealring
+[M2.c] Checking min_enclosure >= 0.01 µm of Via1NoSealring within Metal2
+[M2.b] Checking min_notch >= 0.21 µm on layer Metal2NoSealring (30044/0)
+[M2.c1] Checking min_enclosure >= 0.05 µm of Via1NoSealring within Metal2
+[M2.f] Checking min_space >= 0.60 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.i] Checking min_space >= 0.24 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.e] Checking min_space >= 0.24 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.g] Checking min_width >= 0.24 µm on layer Metal2NoSealring (30044/0)
+[M2Fil.a2] Checking max_length <= 5.00 µm on layer Metal2.filler
+[M2Fil.b] Checking min_space >= 0.42 µm between layer Metal2.filler and Metal2.filler
+[M2Fil.a1] Checking min_width >= 1.00 µm on layer Metal2.filler (10/22)
+[M2Fil.c] Checking min_space >= 0.42 µm between layer Metal2.filler and Metal2
+[M2Fil.d] Checking min_enclosure >= 1.00 µm of Metal2FillerInTRANS within TRANS
+[M2Fil.d] Checking min_space >= 1.00 µm between layer Metal2.filler and TRANS
+[M3.b] Checking min_space >= 0.21 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.a] Checking min_width >= 0.20 µm on layer Metal3NoSealring (30045/0)
+[M3.d] Checking min_area >= 0.1440 µm² on layer Metal3NoSealring
+[M3.c] Checking min_enclosure >= 0.01 µm of Via2NoSealring within Metal3
+[M3.b] Checking min_notch >= 0.21 µm on layer Metal3NoSealring (30045/0)
+[M3.c1] Checking min_enclosure >= 0.05 µm of Via2NoSealring within Metal3
+[M3.f] Checking min_space >= 0.60 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.i] Checking min_space >= 0.24 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.e] Checking min_space >= 0.24 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.g] Checking min_width >= 0.24 µm on layer Metal3NoSealring (30045/0)
+[M3Fil.a2] Checking max_length <= 5.00 µm on layer Metal3.filler
+[M3Fil.b] Checking min_space >= 0.42 µm between layer Metal3.filler and Metal3.filler
+[M3Fil.a1] Checking min_width >= 1.00 µm on layer Metal3.filler (30/22)
+[M3Fil.c] Checking min_space >= 0.42 µm between layer Metal3.filler and Metal3
+[M3Fil.d] Checking min_enclosure >= 1.00 µm of Metal3FillerInTRANS within TRANS
+[M3Fil.d] Checking min_space >= 1.00 µm between layer Metal3.filler and TRANS
+[M4.b] Checking min_space >= 0.21 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.a] Checking min_width >= 0.20 µm on layer Metal4NoSealring (30046/0)
+[M4.d] Checking min_area >= 0.1440 µm² on layer Metal4NoSealring
+[M4.b] Checking min_notch >= 0.21 µm on layer Metal4NoSealring (30046/0)
+[M4.c1] Checking min_enclosure >= 0.05 µm of Via3NoSealring within Metal4
+[M4.c] Checking min_enclosure >= 0.01 µm of Via3NoSealring within Metal4
+[M4.f] Checking min_space >= 0.60 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.g] Checking min_width >= 0.24 µm on layer Metal4NoSealring (30046/0)
+[M4.e] Checking min_space >= 0.24 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.i] Checking min_space >= 0.24 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4Fil.a2] Checking max_length <= 5.00 µm on layer Metal4.filler
+[M4Fil.c] Checking min_space >= 0.42 µm between layer Metal4.filler and Metal4
+[M4Fil.b] Checking min_space >= 0.42 µm between layer Metal4.filler and Metal4.filler
+[M4Fil.a1] Checking min_width >= 1.00 µm on layer Metal4.filler (50/22)
+[M4Fil.d] Checking min_enclosure >= 1.00 µm of Metal4FillerInTRANS within TRANS
+[V1.a] Checking exact_width == 0.19 µm on layer Via1NoSealring (30038/0)
+[M4Fil.d] Checking min_space >= 1.00 µm between layer Metal4.filler and TRANS
+[V1.b] Checking min_space >= 0.22 µm between layer Via1NoSealring and Via1NoSealring
+[V1.b1] Checking min_space >= 0.29 µm in 1 of 2 axes, arrays over 3×3, on layer Via1NoSealring
+[V2.a] Checking exact_width == 0.19 µm on layer Via2NoSealring (30039/0)
+[V1.c1] Checking min_enclosure >= 0.05 µm of Via1NoSealring within Metal1
+[V1.c] Checking min_enclosure >= 0.01 µm of Via1NoSealring within Metal1
+[V2.b] Checking min_space >= 0.22 µm between layer Via2NoSealring and Via2NoSealring
+[V2.b1] Checking min_space >= 0.29 µm in 1 of 2 axes, arrays over 3×3, on layer Via2NoSealring
+[V2.c1] Checking min_enclosure >= 0.05 µm of Via2NoSealring within Metal2
+[V2.c] Checking min_enclosure >= 0.01 µm of Via2NoSealring within Metal2
+[V3.b] Checking min_space >= 0.22 µm between layer Via3NoSealring and Via3NoSealring
+[V3.b1] Checking min_space >= 0.29 µm in 1 of 2 axes, arrays over 3×3, on layer Via3NoSealring
+[V3.c] Checking min_enclosure >= 0.01 µm of Via3NoSealring within Metal3
+[V3.a] Checking exact_width == 0.19 µm on layer Via3NoSealring (30040/0)
+[V3.c1] Checking min_enclosure >= 0.05 µm of Via3NoSealring within Metal3
+[TV1.b] Checking min_space >= 0.42 µm between layer TopVia1NoSealring and TopVia1NoSealring
+[TV1.a] Checking exact_width == 0.42 µm on layer TopVia1NoSealring (30042/0)
+[TV1.c] Checking min_enclosure >= 0.10 µm of TopVia1NoSealring within Metal4
+[TM1.a] Checking min_width >= 1.64 µm on layer TopMetal1NoSealring (30071/0)
+[TM1.b] Checking min_notch >= 1.64 µm on layer TopMetal1NoSealring (30071/0)
+[TM1.b] Checking min_space >= 1.64 µm between layer TopMetal1NoSealring and TopMetal1NoSealring
+[TV1.d] Checking min_enclosure >= 0.42 µm of TopVia1NoSealring within TopMetal1
+[TM1Fil.a] Checking min_width >= 5.00 µm on layer TopMetal1.filler (126/22)
+[TM1Fil.a1] Checking max_length <= 10.00 µm on layer TopMetal1.filler
+[TM1Fil.c] Checking min_space >= 3.00 µm between layer TopMetal1.filler and TopMetal1
+[TM1Fil.b] Checking min_space >= 3.00 µm between layer TopMetal1.filler and TopMetal1.filler
+[TM1Fil.d] Checking min_enclosure >= 4.90 µm of TopMetal1FillerInTRANS within TRANS
+[Pas.a] Checking min_width >= 2.10 µm on layer Passiv (9/0)
+[TM1Fil.d] Checking min_space >= 4.90 µm between layer TopMetal1.filler and TRANS
+[Pas.b] Checking min_space >= 3.50 µm between layer Passiv and Passiv
+[Pas.c] Checking min_enclosure >= 2.10 µm of PassivInSeal within TopMetal1
+[Pas.b] Checking min_notch >= 3.50 µm on layer Passiv (9/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealpSD (30298/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealActiv (30297/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal2 (30300/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal1 (30299/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal4 (30302/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal3 (30301/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealTopMetal1 (30304/0)
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealActiv
+[Seal.a] Checking min_width >= 3.50 µm on layer SealTopMetal2 (30305/0)
+[Seal.a] Checking min_width >= 3.50 µm on layer SealMetal5 (30303/0)
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal2
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealpSD
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal3
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal1
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal5
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealMetal4
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealTopMetal1
+[Seal.b] Checking min_space >= 4.90 µm between layer ActivNoSealring and SealTopMetal2
+[Seal.c] Checking min_width >= 0.16 µm on layer SealCont (30306/0)
+[Seal.c] Checking max_width <= 0.16 µm on layer SealCont (30306/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia1 (30307/0)
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia1 (30307/0)
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia2 (30308/0)
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia3 (30309/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia2 (30308/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia3 (30309/0)
+[Seal.c1] Checking max_width <= 0.19 µm on layer SealVia4 (30310/0)
+[Seal.c2] Checking max_width <= 0.42 µm on layer SealTopVia1 (30311/0)
+[Seal.c1] Checking min_width >= 0.19 µm on layer SealVia4 (30310/0)
+[Seal.c2] Checking min_width >= 0.42 µm on layer SealTopVia1 (30311/0)
+[Seal.c3] Checking max_width <= 0.90 µm on layer SealTopVia2 (30312/0)
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia1 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealCont within SealActiv
+[Seal.c3] Checking min_width >= 0.90 µm on layer SealTopVia2 (30312/0)
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia3 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia2 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealTopVia1 within SealActiv
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealVia4 within SealActiv
+[Seal.e] Checking min_width >= 4.20 µm on layer RingPassiv (30314/0)
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealpSD
+[Seal.d] Checking min_enclosure >= 1.30 µm of SealTopVia2 within SealActiv
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealActiv
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal4
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal1
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal2
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal3
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealTopMetal2
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealMetal5
+[Seal.f] Checking min_space >= 1.00 µm between layer RingPassiv and SealTopMetal1
+[Seal.l] Checking every shape lies inside EdgeSeal.boundary
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal2.slit (10/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal3.slit (30/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal1.slit (8/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer TopMetal2.slit (134/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal4.slit (50/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer TopMetal1.slit (126/24)
+[Slt.a] Checking min_width >= 2.80 µm on layer Metal5.slit (67/24)
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal2.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal3.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal4.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal1.slit
+[Slt.c] Checking wide_uncovered: Metal1NoExempt wider than 30.00 µm must contain Metal1.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of TopMetal1.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of TopMetal2.slit
+[Slt.b] Checking max_edge_length <= 20.0000 µm on every boundary segment of Metal5.slit
+[Slt.c] Checking wide_uncovered: Metal2NoExempt wider than 30.00 µm must contain Metal2.slit
+[Slt.c] Checking wide_uncovered: Metal5NoExempt wider than 30.00 µm must contain Metal5.slit
+[Slt.c] Checking wide_uncovered: Metal4NoExempt wider than 30.00 µm must contain Metal4.slit
+[Slt.c] Checking wide_uncovered: Metal3NoExempt wider than 30.00 µm must contain Metal3.slit
+[Slt.c] Checking wide_uncovered: TopMetal1NoExempt wider than 30.00 µm must contain TopMetal1.slit
+[Slt.c] Checking wide_uncovered: TopMetal2NoExempt wider than 30.00 µm must contain TopMetal2.slit
+[Slt.e] Checking forbidden region on layer Metal1SlitOnPad (30422/0)
+[Slt.e] Checking forbidden region on layer Metal2SlitOnPad (30423/0)
+[Slt.e] Checking forbidden region on layer Metal3SlitOnPad (30424/0)
+[Slt.e] Checking forbidden region on layer Metal4SlitOnPad (30425/0)
+[Slt.e] Checking forbidden region on layer Metal5SlitOnPad (30426/0)
+[Slt.e] Checking forbidden region on layer TopMetal1SlitOnPad (30427/0)
+[Slt.e] Checking forbidden region on layer TopMetal2SlitOnPad (30428/0)
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal1.slit within Metal1
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal2.slit within Metal2
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal4.slit within Metal4
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal3.slit within Metal3
+[Slt.f] Checking min_enclosure >= 1.00 µm of Metal5.slit within Metal5
+[Slt.f] Checking min_enclosure >= 1.00 µm of TopMetal2.slit within TopMetal2
+[Slt.g] Checking min_space >= 0.60 µm between layer Metal5.slit and MIM
+[Slt.f] Checking min_enclosure >= 1.00 µm of TopMetal1.slit within TopMetal1
+[Slt.g] Checking min_space >= 0.60 µm between layer TopMetal1.slit and MIM
+[Slt.h1] Checking min_space >= 0.30 µm between layer Metal1.slit and Cont
+[Slt.h1] Checking forbidden: Metal1.slit over Cont not allowed
+[Slt.h1] Checking min_space >= 0.30 µm between layer Metal1.slit and Via1
+[Slt.h1] Checking forbidden: Metal1.slit over Via1 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal2.slit and Via1
+[Slt.h2] Checking forbidden: Metal2.slit over Via1 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal2.slit and Via2
+[Slt.h2] Checking forbidden: Metal2.slit over Via2 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal3.slit and Via2
+[Slt.h2] Checking forbidden: Metal3.slit over Via2 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal3.slit and Via3
+[Slt.h2] Checking forbidden: Metal3.slit over Via3 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal4.slit and Via3
+[Slt.h2] Checking forbidden: Metal4.slit over Via3 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal4.slit and Via4
+[Slt.h2] Checking forbidden: Metal4.slit over Via4 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal5.slit and Via4
+[Slt.h2] Checking forbidden: Metal5.slit over Via4 not allowed
+[Slt.h2] Checking min_space >= 0.30 µm between layer Metal5.slit and TopVia1
+[Slt.h2] Checking forbidden: Metal5.slit over TopVia1 not allowed
+[Slt.h4] Checking min_space >= 1.00 µm between layer TopMetal2.slit and TopVia2
+[Slt.i] Checking min_density >= 6.00% of Metal1.slit in Metal1NoExempt regions > 35 µm
+[Slt.h3] Checking min_space >= 1.00 µm between layer TopMetal1.slit and TopVia2
+[Slt.h3] Checking min_space >= 1.00 µm between layer TopMetal1.slit and TopVia1
+[Slt.i] Checking min_density >= 6.00% of Metal2.slit in Metal2NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of Metal5.slit in Metal5NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of Metal3.slit in Metal3NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of Metal4.slit in Metal4NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of TopMetal1.slit in TopMetal1NoExempt regions > 35 µm
+[Slt.i] Checking min_density >= 6.00% of TopMetal2.slit in TopMetal2NoExempt regions > 35 µm
+[LU.b] Checking max_space <= 20.00 µm from every part of NActivInPWell to PsdActivInPWell
+[LU.a] Checking max_space <= 20.00 µm from every part of PsdActivInNWell to NActivInNWell
+[LU.c] Checking max_space <= 6.00 µm from every part of NWellTieAbuttedNoCont to ContOnPsdActivInNWell
+[LU.d1] Checking max_space <= 6.00 µm from every part of SubstrateTieStandalone to ContOnSubstrateTie
+[LU.c1] Checking max_space <= 6.00 µm from every part of SubstrateTieAbuttedNoCont to ContOnNsdActivInPWell
+[LU.d] Checking max_space <= 6.00 µm from every part of NWellTieStandaloneNoSchottky to ContOnNWellTie
+Topcell: TEST6967
+DRC completed in 3.949s
+DRC clean.
+Report written to: gdscheck/rep_core.lyrdb
+Status: PASS
+===== suite precheck
+PDK: IHP SG13CMOS5L (0.1)
+Suite: precheck
+Library: LIB
+Memory: planning within 461.8 GB (MemTotal 540.2 GB), 0.0 GB resident, 230.9 GB for the merge cache
+[Act.a] Checking min_width >= 0.15 µm on layer Activ (1/0)
+[Act.b] Checking min_space >= 0.21 µm between layer Activ and Activ
+[Act.b] Checking min_notch >= 0.21 µm on layer Activ (1/0)
+[AFil.c1] Checking min_space >= 0.42 µm between layer Activ.filler and Activ
+[AFil.g1] Checking max_density <= 55.00% on layer(s) [Activ, Activ.filler, Activ.mask]
+[AFil.g3] Checking max_density <= 65.00% on layer(s) [Activ, Activ.filler, Activ.mask] (window: 800x800 µm²)
+[AFil.g] Checking min_density >= 35.00% on layer(s) [Activ, Activ.filler, Activ.mask]
+[AFil.g2] Checking min_density >= 25.00% on layer(s) [Activ, Activ.filler, Activ.mask] (window: 800x800 µm²)
+[AFil.g1] Density: 40.77%
+[AFil.g] Density: 40.77%
+[Gat.b] Checking min_notch >= 0.18 µm on layer GatPoly (5/0)
+[Gat.a] Checking min_width >= 0.13 µm on layer GatPoly (5/0)
+[TGO.f] Checking min_width >= 0.86 µm on layer ThickGateOx (44/0)
+[Gat.b] Checking min_space >= 0.18 µm between layer GatPoly and GatPoly
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and GatPoly
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and Activ
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and Cont
+[Gat.d] Checking min_space >= 0.07 µm between layer GatPoly and Activ
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and nSD.block
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and pSD
+[GFil.d] Checking min_space >= 1.10 µm between layer GatPoly.filler and SalBlock
+[GFil.d] Checking forbidden region on layer GatPolyFillerOverGFilD (30287/0)
+[GFil.g] Checking min_density >= 15.00% on layer(s) [GatPoly, GatPoly.filler]
+[Cnt.a] Checking exact_width == 0.16 µm on layer ContSquare (30076/0)
+[Cnt.b] Checking min_space >= 0.18 µm between layer ContSquare and ContSquare
+[GFil.g] Density: 23.74%
+[M1.a] Checking min_width >= 0.16 µm on layer Metal1NoSealring (30043/0)
+[M1.b] Checking min_notch >= 0.18 µm on layer Metal1NoSealring (30043/0)
+[M1.b] Checking min_space >= 0.18 µm between layer Metal1NoSealring and Metal1NoSealring
+[M1.k] Checking max_density <= 60.00% on layer(s) [Metal1Density]
+[M1.j] Checking min_density >= 35.00% on layer(s) [Metal1Density]
+[M1.j] Density: 44.62%
+[M1.k] Density: 44.62%
+[M1Fil.h] Checking min_density >= 25.00% on layer(s) [Metal1Density] (window: 800x800 µm²)
+[M1Fil.k] Checking max_density <= 75.00% on layer(s) [Metal1Density] (window: 800x800 µm²)
+[M1Fil.c] Checking min_space >= 0.42 µm between layer Metal1.filler and Metal1
+[M2.a] Checking min_width >= 0.20 µm on layer Metal2NoSealring (30044/0)
+[M2.k] Checking max_density <= 60.00% on layer(s) [Metal2Density]
+[M2.b] Checking min_notch >= 0.21 µm on layer Metal2NoSealring (30044/0)
+[M2.b] Checking min_space >= 0.21 µm between layer Metal2NoSealring and Metal2NoSealring
+[M2.j] Checking min_density >= 35.00% on layer(s) [Metal2Density]
+[M2.k] Density: 42.80%
+[M2.j] Density: 42.80%
+[M2Fil.k] Checking max_density <= 75.00% on layer(s) [Metal2Density] (window: 800x800 µm²)
+[M2Fil.h] Checking min_density >= 25.00% on layer(s) [Metal2Density] (window: 800x800 µm²)
+[M2Fil.c] Checking min_space >= 0.42 µm between layer Metal2.filler and Metal2
+[M3.a] Checking min_width >= 0.20 µm on layer Metal3NoSealring (30045/0)
+[M3.b] Checking min_space >= 0.21 µm between layer Metal3NoSealring and Metal3NoSealring
+[M3.k] Checking max_density <= 60.00% on layer(s) [Metal3Density]
+[M3.j] Checking min_density >= 35.00% on layer(s) [Metal3Density]
+[M3.b] Checking min_notch >= 0.21 µm on layer Metal3NoSealring (30045/0)
+[M3.j] Density: 42.20%
+[M3.k] Density: 42.20%
+[M3Fil.c] Checking min_space >= 0.42 µm between layer Metal3.filler and Metal3
+[M3Fil.k] Checking max_density <= 75.00% on layer(s) [Metal3Density] (window: 800x800 µm²)
+[M3Fil.h] Checking min_density >= 25.00% on layer(s) [Metal3Density] (window: 800x800 µm²)
+[M4.a] Checking min_width >= 0.20 µm on layer Metal4NoSealring (30046/0)
+[M4.k] Checking max_density <= 60.00% on layer(s) [Metal4Density]
+[M4.j] Checking min_density >= 35.00% on layer(s) [Metal4Density]
+[M4.b] Checking min_notch >= 0.21 µm on layer Metal4NoSealring (30046/0)
+[M4.b] Checking min_space >= 0.21 µm between layer Metal4NoSealring and Metal4NoSealring
+[M4.k] Density: 42.80%
+[M4.j] Density: 42.80%
+[M4Fil.c] Checking min_space >= 0.42 µm between layer Metal4.filler and Metal4
+[M4Fil.h] Checking min_density >= 25.00% on layer(s) [Metal4Density] (window: 800x800 µm²)
+[M4Fil.k] Checking max_density <= 75.00% on layer(s) [Metal4Density] (window: 800x800 µm²)
+[V1.a] Checking exact_width == 0.19 µm on layer Via1NoSealring (30038/0)
+[V2.b] Checking min_space >= 0.22 µm between layer Via2NoSealring and Via2NoSealring
+[V2.a] Checking exact_width == 0.19 µm on layer Via2NoSealring (30039/0)
+[V3.a] Checking exact_width == 0.19 µm on layer Via3NoSealring (30040/0)
+[V1.b] Checking min_space >= 0.22 µm between layer Via1NoSealring and Via1NoSealring
+[TV1.a] Checking exact_width == 0.42 µm on layer TopVia1NoSealring (30042/0)
+[TM1.a] Checking min_width >= 1.64 µm on layer TopMetal1NoSealring (30071/0)
+[TV1.b] Checking min_space >= 0.42 µm between layer TopVia1NoSealring and TopVia1NoSealring
+[V3.b] Checking min_space >= 0.22 µm between layer Via3NoSealring and Via3NoSealring
+[TM1.b] Checking min_space >= 1.64 µm between layer TopMetal1NoSealring and TopMetal1NoSealring
+[TM1.d] Checking max_density <= 70.00% on layer(s) [TopMetal1Density]
+[TM1.c] Checking min_density >= 25.00% on layer(s) [TopMetal1Density]
+[TM1.b] Checking min_notch >= 1.64 µm on layer TopMetal1NoSealring (30071/0)
+[TM1.c] Density: 42.32%
+[TM1.d] Density: 42.32%
+[TM1Fil.c] Checking min_space >= 3.00 µm between layer TopMetal1.filler and TopMetal1
+[Pas.b] Checking min_space >= 3.50 µm between layer Passiv and Passiv
+[Pas.a] Checking min_width >= 2.10 µm on layer Passiv (9/0)
+[Pas.b] Checking min_notch >= 3.50 µm on layer Passiv (9/0)
+[Padb.a] Checking exact_length == 60.00 µm on layer SBumpPad
+[Padb.b] Checking min_space >= 70.00 µm between layer SBumpPad and SBumpPad
+[Padb.c] Checking min_enclosure >= 10.00 µm of SBumpPad within TopMetal1
+[Padb.a] Checking exact_dim == 60.00 µm on layer SBumpPad
+[Padc.a] Checking forbidden region on layer CuPillarPadOffSize (30030/0)
+[Padc.b] Checking min_space >= 50.00 µm between layer CuPillarPad45 and CuPillarPadNot45
+[Padc.b] Checking min_space >= 40.00 µm between layer CuPillarPad and CuPillarPad
+[Padc.c] Checking min_enclosure >= 7.50 µm of CuPillarPad within TopMetal1
+[Padc.b] Checking min_space >= 50.00 µm between layer CuPillarPad45 and CuPillarPad45
+[Seal.l] Checking every shape lies inside EdgeSeal.boundary
+[Pin.a] Checking forbidden: Activ.pin not covered by Activ
+[Pin.b] Checking forbidden: GatPoly.pin not covered by GatPoly
+[Pin.e] Checking forbidden: Metal1.pin not covered by Metal1
+[Pin.f] Checking forbidden: Metal2.pin not covered by Metal2
+[Pin.f] Checking forbidden: Metal3.pin not covered by Metal3
+[Pin.f] Checking forbidden: Metal4.pin not covered by Metal4
+[Pin.f] Checking forbidden: Metal5.pin not covered by Metal5
+[Pin.g] Checking forbidden: TopMetal1.pin not covered by TopMetal1
+[Pin.h] Checking forbidden: TopMetal2.pin not covered by TopMetal2
+[LBE.b1] Checking max_area <= 250000.0000 µm² on layer LBE
+[LBE.a] Checking min_width >= 100.00 µm on layer LBE (157/0)
+[LBE.b] Checking max_length <= 1500.00 µm on layer LBE
+[LBE.c] Checking min_space >= 100.00 µm between layer LBE and LBE
+[LBE.d] Checking min_space >= 150.00 µm between layer LBE and EdgeSeal
+[LBE.c] Checking min_notch >= 100.00 µm on layer LBE (157/0)
+[LBE.i] Checking max_density <= 20.00% on layer(s) [LBE]
+[LBE.h] Checking no LBE ring on layer LBE (157/0)
+[LBE.i] Density: 0.00%
+[forbidden] Checking forbidden region on layer BiWind (3/0)
+[forbidden] Checking forbidden region on layer PEmWind (11/0)
+[forbidden] Checking forbidden region on layer BasPoly (13/0)
+[forbidden] Checking forbidden region on layer DeepCo (35/0)
+[forbidden] Checking forbidden region on layer PEmPoly (53/0)
+[forbidden] Checking forbidden region on layer EmPoly (55/0)
+[forbidden] Checking forbidden region on layer LDMOS (57/0)
+[forbidden] Checking forbidden region on layer PBiWind (58/0)
+[forbidden] Checking forbidden region on layer NoDRC (62/0)
+[forbidden] Checking forbidden region on layer Flash (71/0)
+[forbidden] Checking forbidden region on layer ColWind (139/0)
+[forbidden] Checking forbidden region on layer Metal5 (67/0)
+[forbidden] Checking forbidden region on layer Metal5.filler (67/22)
+[forbidden] Checking forbidden region on layer Via4 (66/0)
+[forbidden] Checking forbidden region on layer TopMetal2 (134/0)
+[forbidden] Checking forbidden region on layer TopMetal2.filler (134/22)
+[forbidden] Checking forbidden region on layer TopVia2 (133/0)
+[forbidden] Checking forbidden region on layer TRANS (26/0)
+[forbidden] Checking forbidden region on layer nBuLay (32/0)
+[forbidden] Checking forbidden region on layer MIM (36/0)
+[forbidden] Checking forbidden region on layer Vmim (129/0)
+Topcell: TEST6967
+DRC completed in 1.781s
+DRC clean.
+Report written to: gdscheck/rep_precheck.lyrdb
+Status: PASS
+===== suite recommended
+PDK: IHP SG13CMOS5L (0.1)
+Suite: recommended
+Library: LIB
+Memory: planning within 461.8 GB (MemTotal 540.2 GB), 0.0 GB resident, 230.9 GB for the merge cache
+[Pad.aR] Checking min_width >= 30.00 µm on layer PassivDfpad (30315/0)
+[Pad.bR] Checking min_space >= 8.40 µm between layer PassivDfpad and PassivDfpad
+[Pad.dR] Checking forbidden region on layer PadDRBad (30377/0)
+[Pad.d1R] Checking forbidden region on layer PadD1RBad (30379/0)
+[Pad.gR] Checking min_enclosure >= 1.40 µm of TopVia1 within Metal4Dfpad
+[Pad.jR] Checking forbidden region on layer GateUnderPad (30381/0)
+[Pad.kR] Checking forbidden region on layer TopVia1UnderPad (30483/0)
+Topcell: TEST6967
+DRC completed in 0.074s
+DRC clean.
+Report written to: gdscheck/rep_recommended.lyrdb
+Status: PASS
+===== suite density
+PDK: IHP SG13CMOS5L (0.1)
+Suite: density
+Library: LIB
+Memory: planning within 461.8 GB (MemTotal 540.2 GB), 0.0 GB resident, 230.9 GB for the merge cache
+[AFil.g] Checking min_density >= 35.00% on layer(s) [Activ, Activ.filler, Activ.mask]
+[AFil.g2] Checking min_density >= 25.00% on layer(s) [Activ, Activ.filler, Activ.mask] (window: 800x800 µm²)
+[AFil.g3] Checking max_density <= 65.00% on layer(s) [Activ, Activ.filler, Activ.mask] (window: 800x800 µm²)
+[AFil.g1] Checking max_density <= 55.00% on layer(s) [Activ, Activ.filler, Activ.mask]
+[AFil.g1] Density: 40.77%
+[AFil.g] Density: 40.77%
+[M1.j] Checking min_density >= 35.00% on layer(s) [Metal1Density]
+[M1.k] Checking max_density <= 60.00% on layer(s) [Metal1Density]
+[GFil.g] Checking min_density >= 15.00% on layer(s) [GatPoly, GatPoly.filler]
+[M1Fil.h] Checking min_density >= 25.00% on layer(s) [Metal1Density] (window: 800x800 µm²)
+[M1.j] Density: 44.62%
+[M1.k] Density: 44.62%
+[GFil.g] Density: 23.74%
+[M2Fil.h] Checking min_density >= 25.00% on layer(s) [Metal2Density] (window: 800x800 µm²)
+[M1Fil.k] Checking max_density <= 75.00% on layer(s) [Metal1Density] (window: 800x800 µm²)
+[M2.j] Checking min_density >= 35.00% on layer(s) [Metal2Density]
+[M2.k] Checking max_density <= 60.00% on layer(s) [Metal2Density]
+[M2.j] Density: 42.80%
+[M2.k] Density: 42.80%
+[M2Fil.k] Checking max_density <= 75.00% on layer(s) [Metal2Density] (window: 800x800 µm²)
+[M3.j] Checking min_density >= 35.00% on layer(s) [Metal3Density]
+[M3Fil.h] Checking min_density >= 25.00% on layer(s) [Metal3Density] (window: 800x800 µm²)
+[M3.k] Checking max_density <= 60.00% on layer(s) [Metal3Density]
+[M3.j] Density: 42.20%
+[M3.k] Density: 42.20%
+[M3Fil.k] Checking max_density <= 75.00% on layer(s) [Metal3Density] (window: 800x800 µm²)
+[M4Fil.h] Checking min_density >= 25.00% on layer(s) [Metal4Density] (window: 800x800 µm²)
+[M4.j] Checking min_density >= 35.00% on layer(s) [Metal4Density]
+[M4.k] Checking max_density <= 60.00% on layer(s) [Metal4Density]
+[M4.j] Density: 42.80%
+[M4.k] Density: 42.80%
+[TM1.c] Checking min_density >= 25.00% on layer(s) [TopMetal1Density]
+[M4Fil.k] Checking max_density <= 75.00% on layer(s) [Metal4Density] (window: 800x800 µm²)
+[TM1.d] Checking max_density <= 70.00% on layer(s) [TopMetal1Density]
+[TM1.d] Density: 42.32%
+[TM1.c] Density: 42.32%
+Topcell: TEST6967
+DRC completed in 1.033s
+DRC clean.
+Report written to: gdscheck/rep_density.lyrdb
+Status: PASS
+===== suite antenna
+PDK: IHP SG13CMOS5L (0.1)
+Suite: antenna
+Library: LIB
+Connecting nets ... done (0.4s)
+Memory: planning within 461.8 GB (MemTotal 540.2 GB), 0.1 GB resident, 230.9 GB for the merge cache
+[Ant.a] Checking antenna_ratio: cumulative AntPolyField area / gate area ≥ 200
+[Ant.b] Checking antenna_ratio: cumulative Metal1+Metal2+Metal3+Metal4+TopMetal1 area / gate area ≥ 200 (nets without a protection diode)
+[Ant.c] Checking antenna_ratio: cumulative Cont area / gate area ≥ 20
+[Ant.d] Checking antenna_ratio: cumulative Via1+Via2+Via3+TopVia1 area / gate area ≥ 20 (nets without a protection diode)
+[Ant.f] Checking antenna_ratio: cumulative Via1+Via2+Via3+TopVia1 area / gate area ≥ 500 (nets with a protection diode)
+[Ant.e] Checking antenna_ratio: cumulative Metal1+Metal2+Metal3+Metal4+TopMetal1 area / gate area ≥ 20000 (nets with a protection diode)
+[Ant.g] Checking min_area >= 0.1600 µm² on layer AntDantenna, on a net with the connected layer
+[Ant.g] Checking min_area >= 0.1600 µm² on layer AntDpantenna, on a net with the connected layer
+[Ant.h] Checking forbidden region on layer AntHError (30452/0)
+[Ant.i] Checking forbidden region on layer AntIError (30432/0)
+Topcell: TEST6967
+DRC completed in 0.407s
+DRC clean.
+Report written to: gdscheck/rep_antenna.lyrdb
+Status: PASS
