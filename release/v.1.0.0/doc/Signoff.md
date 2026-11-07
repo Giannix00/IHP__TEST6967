@@ -1,7 +1,7 @@
 # DRC and LVS evidence, TEST6967 v.1.0.0
 
 All runs are on the release file `gds/TEST6967.gds` itself (sha256
-`ece14230fd5ddc5bfea09b44cf251c4cdafabb0805406b5e70a856e70a369ff3`), top cell `TEST6967`, seal ring and filler
+`7d3c4f6d8a55f32d4782d62112d1f959134d386959e32dff0d1361fadfde6cfd`), top cell `TEST6967`, seal ring and filler
 included, and on the release netlist `netlist/TEST6967.cdl` (sha256
 `e4b2d50075f2ab6f208fe987872981c6f4a9ffa37495069f53d237dd0e822ec7`). Run date 2026-11-07 (UTC).
 
@@ -61,12 +61,12 @@ builds. Logs: [gdscheck_v0.2.0.log](gdscheck_v0.2.0.log), [gdscheck_07aed349.log
 
 ## IHP online tape-in check
 
-Online check at dk.ihp-microelectronics.com on 2026-11-06 (Calibre 2026.1.17.11). It reports five rules:
+Online check at dk.ihp-microelectronics.com on 2026-11-07 (Calibre 2026.1.17.11). It reports five rules:
 
 | Reported | Count | Meaning in the `ihp-sg13g2` deck | `ihp-sg13cmos5l` deck |
 | --- | --- | --- | --- |
 | TV1.c | 100 | Min. Metal5 enclosure of TopVia1 | Min. Metal4 enclosure of TopVia1, no violation |
-| Pad.i | 27 | dfpad without TopMetal2 not allowed | dfpad without TopMetal1 not allowed, no violation |
+| Pad.i | 29 | dfpad without TopMetal2 not allowed | dfpad without TopMetal1 not allowed, no violation |
 | M5.j | 1 | Metal5 density | rule does not exist |
 | M5Fil.h | 1 | Metal5 and Metal5:filler coverage ratio | rule does not exist |
 | TM2.c | 1 | Min. global TopMetal2 density | rule does not exist |

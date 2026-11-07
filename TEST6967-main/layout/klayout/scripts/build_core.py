@@ -356,9 +356,15 @@ def main():
             shield_env += R(x0 - m - 4.0, yc - (PITCH - hg) - 1.0, x1 + m + 4.0, yc + (PITCH - hg) + 1.0)
             xa, xb = x0 - m, x1 + m
             assert (xb - xa - 3 * ws) / 2 >= 2.0, "shield strips too close"
+            # The strips end on the ground pad edge; only their part within the pad reaches 1 um into it. The outer strips
+            # stick out MARGIN um beside the pad, and a 1-um overlap there would leave a 1-um exit edge (Pad.eR_M2).
+            yt, yb = yc + (PITCH - hg), yc - (PITCH - hg)
             for xs in (xa, 0.5 * (xa + xb) - ws / 2, xb - ws):
-                add(M2, DRAW, R(xs, y1 + m - 1.0, xs + ws, yc + (PITCH - hg) + 1.0))
-                add(M2, DRAW, R(xs, yc - (PITCH - hg) - 1.0, xs + ws, y0 - m + 1.0))
+                add(M2, DRAW, R(xs, y1 + m - 1.0, xs + ws, yt))
+                add(M2, DRAW, R(xs, yb, xs + ws, y0 - m + 1.0))
+                for g in g_pads:
+                    add(M2, DRAW, R(xs, yt, xs + ws, yt + 1.0) & g)
+                    add(M2, DRAW, R(xs, yb - 1.0, xs + ws, yb) & g)
     stacks.merge()
 
     # ---------------------------------------------------------------- slits

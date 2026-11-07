@@ -116,6 +116,12 @@
    </categories>
   </category>
  <category>
+   <name>TM1Fil.c</name>
+   <description>5.23. TM1Fil.c : Min. TopMetal1:filler space to TopMetal1 is 3.0 um</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
    <name>V1.a</name>
    <description>5.19. V1.a : Min. and max. Via1 width: 0.19 um</description>
    <categories>
@@ -152,12 +158,6 @@
    </categories>
   </category>
  <category>
-   <name>TM1Fil.c</name>
-   <description>5.23. TM1Fil.c : Min. TopMetal1:filler space to TopMetal1 is 3.0 um</description>
-   <categories>
-   </categories>
-  </category>
- <category>
    <name>M1Fil.c</name>
    <description>5.18. M1Fil.c : Min. Metal1:filler space to Metal1 is 0.42 um</description>
    <categories>
@@ -182,6 +182,18 @@
    </categories>
   </category>
  <category>
+   <name>Pas.a</name>
+   <description>5.27. Pas.a:Min. Passiv width: 2.1 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Pas.b</name>
+   <description>5.27. Pas.b: Min. Passiv space or notch: 3.5 um</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
    <name>V2.a</name>
    <description>5.20. V2.a : Min. and max. Via2 width: 0.19 um</description>
    <categories>
@@ -202,18 +214,6 @@
   <category>
    <name>V3.b</name>
    <description>5.20. V3.b : Min. Via3 space: 0.22 um</description>
-   <categories>
-   </categories>
-  </category>
- <category>
-   <name>Pas.a</name>
-   <description>5.27. Pas.a:Min. Passiv width: 2.1 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Pas.b</name>
-   <description>5.27. Pas.b: Min. Passiv space or notch: 3.5 um</description>
    <categories>
    </categories>
   </category>
@@ -250,6 +250,12 @@
   <category>
    <name>LBE.h</name>
    <description>9.1. LBE.h: No LBE ring allowed.</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
+   <name>Pad.m</name>
+   <description>6.9. Pad.m : SBumpPad and CuPillarPad in same layout not allowed</description>
    <categories>
    </categories>
   </category>
@@ -376,12 +382,6 @@
   <category>
    <name>CMOS5L.FORB.Vmim</name>
    <description>CMOS5L.FORB.Vmim : 3.2. Vmim layer is prohibited in CMOS5L (M1-M4-TM1 stack).</description>
-   <categories>
-   </categories>
-  </category>
- <category>
-   <name>Pad.m</name>
-   <description>6.9. Pad.m : SBumpPad and CuPillarPad in same layout not allowed</description>
    <categories>
    </categories>
   </category>
