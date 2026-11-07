@@ -7,15 +7,15 @@ measured with RF probes.
 
 | Structure | Description |
 |---|---|
-| RF_PROBE | GSG probe pad, 100-um pitch, at x = 634.82 um, y = 500 um, probed from the left (-x) |
+| RF_PROBE | GSG probe pad, 100-um pitch, at x = 634.82 um, y = 500 um, probed from the left (-x); Metal2 shield below the signal pad, tied to the ground pads |
 | On-chip network | TopMetal1 lines over Metal1 ground from RF_PROBE to RF_BOND_A and RF_BOND_B |
 | RF_BOND_A, RF_BOND_B | RF pads at the right chip edge, each with two ground pads |
-| CAL_OPEN | GSG pad in the ground plate, open (same pad geometry and ground window as RF_PROBE) |
-| CAL_SHORT | GSG pad in the ground plate, short at the window edge (same pad geometry and ground window as RF_PROBE) |
+| CAL_OPEN | GSG pad in the ground plate, open (same pad geometry, Metal2 shield and ground window as RF_PROBE) |
+| CAL_SHORT | GSG pad in the ground plate, short at the window edge (same pad geometry, Metal2 shield and ground window as RF_PROBE) |
 | PROBE_TEST | GSG pad between CAL_OPEN and CAL_SHORT, shorted like CAL_SHORT, for probe landing and contact tests; uses their neighbouring ground pads |
 | LAND_A, LAND_B | floating TopMetal1 pads at the left chip edge, mirror image of the RF pads in x, as landing pads for wires from a neighbouring chip |
 | GND_DC | two ground pads (top and bottom) |
-| Ground | TopMetal1 plate with slits from x = 345 um to the right chip edge, Metal1 grid below, via stacks Metal1 to TopMetal1 on a 40-um grid; LAND_A, LAND_B and PDK filler left of the plate |
+| Ground | TopMetal1 plate with slits from x = 345 um to the right chip edge, Metal1 grid below (not below the Metal2 pad shields), via stacks Metal1 to TopMetal1 on a 40-um grid; LAND_A, LAND_B and PDK filler left of the plate |
 
 ## Pads
 

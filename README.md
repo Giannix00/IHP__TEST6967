@@ -21,13 +21,16 @@ Chip design data for the IHP Open-Silicon MPW run Nov-2026 (SG13CMOS5L, run 877)
 - **On-chip network**: TopMetal1 lines over Metal1 ground from RF_PROBE to the two RF pads **RF_BOND_A** and
   **RF_BOND_B** at the right chip edge, each with two ground pads.
 - **Calibration structures** in the ground plate at x = 430 um, GSG with 100-um pitch, probed from the left:
-  **CAL_OPEN** and **CAL_SHORT**. They use the same pad geometry and ground window as RF_PROBE.
+  **CAL_OPEN** and **CAL_SHORT**. They use the same pad geometry, Metal2 pad shield and ground window as RF_PROBE.
+- **Metal2 pad shield** below the signal pads of RF_PROBE, CAL_OPEN, CAL_SHORT and PROBE_TEST: covers the pad with 8 um
+  margin and joins the two ground pads with three 20-um strips per side, so that the pad capacitance ends on the local
+  ground and OPEN/SHORT de-embedding removes the pad. No Metal1 grid below the shield.
 - **PROBE_TEST**: signal pad between them at y = 500 um, shorted like CAL_SHORT, for probe landing and contact tests.
   It uses the neighbouring ground pads of CAL_OPEN and CAL_SHORT.
 - **LAND_A, LAND_B**: floating TopMetal1 pads at the left chip edge, the mirror image of RF_BOND_A and RF_BOND_B in x, as
   landing pads for wires from a neighbouring chip.
 - **GND_DC**: two ground pads (top and bottom).
-- Ground: TopMetal1 plate with slits from x = 345 um to the right chip edge, Metal1 grid below, via stacks Metal1
+- Ground: TopMetal1 plate with slits from x = 345 um to the right chip edge, Metal1 grid below (not below the pad shields), via stacks Metal1
   to TopMetal1 on a 40-um grid. Left of the plate the chip holds LAND_A, LAND_B and PDK filler.
 
 Pad positions and sizes: [doc/Datasheet.md](doc/Datasheet.md).

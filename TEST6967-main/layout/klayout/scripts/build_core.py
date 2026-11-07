@@ -75,6 +75,9 @@ def main():
     ap.add_argument("--gnd_sym", action="store_true", help="second DC ground pad mirrored at the chip centre")
     ap.add_argument("--plate_x", type=float, required=True,
                     help="TopMetal1 plate starts at this x, Metal1 ground 15 um further left")
+    ap.add_argument("--m2_shield", type=float, default=0.0, metavar="MARGIN",
+                    help="Metal2 shield below the probe-side signal pads (RF_PROBE, CAL_OPEN, CAL_SHORT, PROBE_TEST) from ground "
+                         "pad to ground pad, MARGIN um beyond the signal pad in x (0 = no shield)")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
@@ -332,6 +335,30 @@ def main():
                 via_ring(lay, x0 + 1.4, y0 + 1.4, x1 - 1.4, y1 - 1.4)
                 continue
             via_field(lay, x0 + enc + 1.0, y0 + enc + 1.0, x1 - enc - 1.0, y1 - enc - 1.0, pitch=1.5)
+    # Metal2 shield below the probe-side signal pads: the pad capacitance ends on a local ground that is tied to the two
+    # ground pads, so RF_PROBE, CAL_OPEN and CAL_SHORT carry the same pad and OPEN/SHORT de-embedding removes it. Without
+    # the shield the pad field reaches the radiating plate, which the standards do not reproduce. The shield covers the
+    # whole signal pad and continues MARGIN um beyond it (Pad.fR_M2: exit length >= 7 um); three 20-um strips per side
+    # run on into the ground pads and merge with the Metal2 of their stacks. Outside the pads no Metal2 is wider than
+    # 30 um (Slt.c), so the shield needs no slits (Slt.e: none on pads; Slt.i). The Metal1 grid stays out of the shield
+    # outline and 4 um beyond it in x (the cuts then fall between the 4-um grid tracks): below the grounded shield the grid
+    # is shadowed, and track ends directly below the strip edges would only add sliver elements to EM meshes.
+    shield_env = db.Region()
+    if a.m2_shield > 0:
+        assert a.m2_shield >= 7.0, "Pad.fR_M2: shield must continue at least 7 um beyond the pad"
+        assert a.m2_shield < 15.0, "Slt.c: shield margin outside the pad must stay narrow"
+        ws = 20.0
+        for sp in s_probe.each():
+            b = sp.bbox()
+            x0, y0, x1, y1 = b.left * ly.dbu, b.bottom * ly.dbu, b.right * ly.dbu, b.top * ly.dbu
+            yc, m = 0.5 * (y0 + y1), a.m2_shield
+            add(M2, DRAW, R(x0 - m, y0 - m, x1 + m, y1 + m))
+            shield_env += R(x0 - m - 4.0, yc - (PITCH - hg) - 1.0, x1 + m + 4.0, yc + (PITCH - hg) + 1.0)
+            xa, xb = x0 - m, x1 + m
+            assert (xb - xa - 3 * ws) / 2 >= 2.0, "shield strips too close"
+            for xs in (xa, 0.5 * (xa + xb) - ws / 2, xb - ws):
+                add(M2, DRAW, R(xs, y1 + m - 1.0, xs + ws, yc + (PITCH - hg) + 1.0))
+                add(M2, DRAW, R(xs, yc - (PITCH - hg) - 1.0, xs + ws, y0 - m + 1.0))
     stacks.merge()
 
     # ---------------------------------------------------------------- slits
@@ -486,7 +513,7 @@ def main():
     probe_window = open_p.interacting(solid_plate.sized(um(1.0)))
     grid = (tracks.merged() & grid_area) - (solid_plate + probe_window).sized(um(GRID_GAP)) - (solid - solid_plate).sized(um(-0.01))
     grid += tracks.merged() & probe_window
-    grid = (grid - all_pads.sized(um(8.0)) - corners).sized(-um(0.5)).sized(um(0.5))
+    grid = (grid - all_pads.sized(um(8.0)) - corners - shield_env).sized(-um(0.5)).sized(um(0.5))
     add(M1, DRAW, grid)
     # A grid track can land closer to a corridor edge than M1.e allows (0.22 um). Such a gap is a notch of one polygon:
     # Calibre reports it, the KLayout deck does not. Fill gaps below 0.5 um.

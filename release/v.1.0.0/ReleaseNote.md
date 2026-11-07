@@ -15,3 +15,6 @@ context, zero-length paths eliminated, max. 8000 vertices, library name LIB, dat
 - Metal1 ground: the grid stays clear of the seal ring corners and is separated from the solid corridor below the lines
   by a 2-um gap, so that the corridor is the only Metal1 plate wider than 35 um (slit density Slt.i, per polygon in
   gdscheck). Corridor and grid stay connected through the via stacks and the TopMetal1 plate.
+- Metal2 pad shield below the probe-side signal pads (RF_PROBE, CAL_OPEN, CAL_SHORT, PROBE_TEST): the signal pad plus
+  8 um, tied to the two ground pads by three 20-um strips per side, no Metal1 grid below it. RF_PROBE, CAL_OPEN and
+  CAL_SHORT therefore carry the same pad, which OPEN/SHORT de-embedding removes.

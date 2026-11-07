@@ -15,7 +15,7 @@ mkdir -p "$OUT"
 cd "$OUT"
 
 in_container python3 "$SCRIPTS/build_core.py" --name "$NAME" --x 1000 --y 1000 --network 65 70 65 60 --t_stub 160 \
-    --gnd_pad 510 895 --gnd_sym --bond_pad 70 --cal 430 300 700 --probe_test 500 --land_pads 792 208 --plate_x 345
+    --gnd_pad 510 895 --gnd_sym --bond_pad 70 --cal 430 300 700 --probe_test 500 --land_pads 792 208 --plate_x 345 --m2_shield 8
 bash "$SCRIPTS/seal_fill.sh" "$NAME" 1000 1000
 in_container python3 "$SCRIPTS/make_release.py" "${NAME}_filled.gds" "$NAME.gds" "$NAME"
 in_container python3 "$SCRIPTS/compare_gds.py" "$NAME.gds" "$RELEASE/gds/$NAME.gds"

@@ -1,9 +1,9 @@
 # DRC and LVS evidence, TEST6967 v.1.0.0
 
 All runs are on the release file `gds/TEST6967.gds` itself (sha256
-`0158422f88d444c7609390ffe5030710d286415adbef1ae661db21e76b54df9e`), top cell `TEST6967`, seal ring and filler
+`ece14230fd5ddc5bfea09b44cf251c4cdafabb0805406b5e70a856e70a369ff3`), top cell `TEST6967`, seal ring and filler
 included, and on the release netlist `netlist/TEST6967.cdl` (sha256
-`e4b2d50075f2ab6f208fe987872981c6f4a9ffa37495069f53d237dd0e822ec7`). Run date 2026-11-06 (UTC).
+`e4b2d50075f2ab6f208fe987872981c6f4a9ffa37495069f53d237dd0e822ec7`). Run date 2026-11-07 (UTC).
 
 | Tool | Version |
 | --- | --- |
@@ -44,7 +44,7 @@ comparison establishes, and what not:
 
 ## Rebuild
 
-`TEST6967-main/layout/klayout/scripts/flow.sh` rebuilt the chip from the generator on 2026-11-06. `compare_gds.py` against
+`TEST6967-main/layout/klayout/scripts/flow.sh` rebuilt the chip from the generator on 2026-11-07. `compare_gds.py` against
 this release: `32 layers compared by XOR, 18 labels, 11 subcells: IDENTICAL`. DRC full, DRC minimum, LVS and Magic DRC of
 the rebuild are clean. Its checksum differs, because KLayout writes the build time into the GDS.
 
